@@ -1,0 +1,67 @@
+// -[KeepHeading]-
+
+
+// -[Copyright]-
+
+/**
+ * (c) 2007, 2019. Step Ahead Software Pty Ltd.
+ * All rights reserved.
+ * Distribution of this software in source or binary format is forbidden without an explicit
+ * license from Step Ahead Software Pty Ltd
+ * 
+ * Source file created and managed by Javelin (TM) Step Ahead Software.
+ * To maintain code and model synchronization you may directly edit code in method bodies
+ * and any sections starting with the 'Keep_*' marker. Make all other changes via Javelin.
+ * See http://stepaheadsoftware.com for more details.
+ */
+package com.sas.platform.pagebloom.iam.module;
+
+import java.lang.*;
+import com.sas.framework.iam.module.jdo.IdentityAccessModuleJdo;
+    
+import com.sas.framework.iam.authentication.expojo.ExpojoAuthenticationService;
+    
+import com.sas.framework.iam.authentication.IAuthenticationService;
+    
+import com.sas.framework.expojo.ModelExposer;
+
+
+// -[KeepBeforeClass]-
+
+
+// -[Class]-
+
+/**
+ * Class Name : PagebloomCommunityIdentityAccessModule
+ * Diagram    : Module
+ * Project    : pagebloom standard biz
+ * Type       : concrete
+ * Identity Access Module for pagebloom community.
+ * 
+ * @author Chris Colman
+ */
+public 
+class PagebloomCommunityIdentityAccessModule extends IdentityAccessModuleJdo
+{
+// -[KeepWithinClass]-
+
+
+// -[Fields]-
+
+
+// -[Methods]-
+
+/**
+ * Adds the repository and services components for a module to the ModelExposer.
+ */
+public void addComponents(ModelExposer modelExposer)
+{
+	super.addComponents(modelExposer);
+	
+	modelExposer.addService(IAuthenticationService.class, new ExpojoAuthenticationService());
+	modelExposer.addService(IUserService.class, new UserService());
+}
+
+}
+
+

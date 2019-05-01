@@ -1,0 +1,153 @@
+// -[KeepHeading]-
+
+
+// -[Copyright]-
+
+/**
+ * (c) 2008,2019. Step Ahead Software Pty Ltd. All rights reserved.
+ * Usage is governed by the terms of the Apache 2 License.
+ * 
+ * Source file created and managed by Javelin (TM) Step Ahead Software.
+ * To maintain code and model synchronization you may directly edit code in method bodies
+ * and any sections starting with the 'Keep_*' marker. Make all other changes via Javelin.
+ * See http://stepaheadsoftware.com for more details.
+ */
+package com.expojo.app.wexpojo.ui.aspect.account;
+
+import java.lang.*;
+import com.expojo.app.wexpojo.ui.aspect.account.RegisterPanel;
+
+
+// -[KeepBeforeClass]-
+
+import com.sas.platform.pagebloom.common.auth.PagebloomRegisterCredentials;
+import com.sas.platform.pagebloom.common.auth.RegisterCredentials;
+import org.apache.wicket.protocol.http.WebSession;
+
+// -[Class]-
+
+/**
+ * Class Name : PagebloomRegisterPanel
+ * Diagram    : Account
+ * Project    : WexPOJO - Wicket + exPOJO application core
+ * Type       : concrete
+ * Describe here
+ * 
+ * @author Chris Colman
+ */
+public 
+class PagebloomRegisterPanel extends RegisterPanel
+{
+// -[KeepWithinClass]-
+
+
+// -[Fields]-
+
+
+// -[Methods]-
+
+/**
+ * Registers the user based on the credentia;s they provided.
+ */
+public void registerUser()
+{
+/*
+	PagebloomRegisterCredentials pbCred = (PagebloomRegisterCredentials)registerCredentials;
+
+	try
+	{
+		WicketPagebloomSession pbSession = (WicketPagebloomSession) WebSession.get();
+
+		// Authentication policies established at the top level AvOrg are implemented for all OrgUnitS
+		// in the hierarchy.
+		// If second factor authentication is required then set the flag in the session to indicate
+		// that we are waiting for the second factor authentication to occur.
+		// Restricted pages should not allow access if this second factor has not yet been provided by the user
+		WebsiteMgr websiteMgr = getWebsiteMgr();
+		if (websiteMgr.getSecondFactorAuthentication())
+		{
+			PagebloomSession pagebloomSession = pbSession.getPagebloomSession();
+			if (pagebloomSession != null)
+				pagebloomSession.setAwaitingSecondFactorAuthentication(true);
+		}
+
+		// Check if new username is unique
+		IUser iUser = UserRepository.get().findUserByUsername(pbCred.getEmail());
+
+		if (iUser != null)
+		{
+			if (Environment.getAppServices().isDemoMode())
+			{
+				// just update password on existing user
+				User user = (User)iUser;
+				Person person = user.getPerson();
+				Actor actor = getOrg().getAvOrg().establishActorForEntity(person);
+
+				user.setPasswordFromUndigestedForm(pbCred.getPassword());
+
+
+				ExpojoContext.pp().flush();
+
+
+				pbSession.getPagebloomSession().setUser(user);
+				pbSession.getPagebloomSession().setEntity(person);
+			}
+		}
+		else
+			UserService.get().registerUser(getOrg().getAvOrg(), pbSession.getPagebloomSession(),
+				pbCred.getEmail(), pbCred.getPassword(), pbCred.getFirstName(), pbCred.getLastName());
+	}
+	catch(Exception e)
+	{
+		error(e.getMessage());
+	}
+*/
+}
+
+
+
+/**
+ * Creates the credentials model object. Overridden by derived classes to create extended
+ * register credentials.
+ */
+public RegisterCredentials createCredentialsModel()
+
+{
+	return new PagebloomRegisterCredentials();
+}
+
+/**
+ * Creates the signup form for this registration.
+ */
+/*
+public UserSignupForm createSignupForm()
+{
+	return new PagebloomUserSignupForm("userSignupForm", getOrg(), registerCredentials);
+}
+ */
+
+
+
+/**
+ * Describe here
+ */
+public void onInitialize()
+
+{
+	super.onInitialize();
+}
+
+
+
+
+/**
+ * Constructs the object
+ */
+public PagebloomRegisterPanel(String id)
+{
+	super(id);
+}
+
+}
+
+

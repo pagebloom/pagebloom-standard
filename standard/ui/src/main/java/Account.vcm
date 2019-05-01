@@ -1,0 +1,508 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000034 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 0c3b8000 
+	"Account"
+	"Pages related to the user account, eg., Registration."
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 2a6a0003 /Location/ 0000003c 0000001e 000001a4 00000082 
+			{
+			}
+			/UOID/ 02 0c3b8000 00 372b6fe3 
+			"WebsitePage"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 2276d004 /Location/ 0000001e 000001cc 000001c2 000002e4 
+			{
+			}
+			/UOID/ 02 0c3b8000 00 372bda63 
+			"AccountPage"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\account"
+			"Page including account related processes - eg., registration, log on etc.,"
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 00 00 0002 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 1d88b005 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 2a6a0003 00 /UOID/ 02 2276d004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 0cf26006 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"PageParameters parameters"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 1f51a007 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 04fd3008 0002 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 1d88b005 
+		/{ class CClass/ 
+			01 000b 1c581009 /Location/ 00000a46 00000168 00000e6a 000003e8 
+			{
+			}
+			/UOID/ 02 0c3b8000 00 37745021 
+			"RegisterPanel"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\account"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0001 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 168fb01f 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 
+					/{ class CClass/ 
+						01 000b 0c0b0020 /Location/ 0000087a 0000001e 000009f6 00000082 
+						{
+						}
+						/UOID/ 02 0c3b8000 00 377521a7 
+						"WebsitePanel"
+						"RENAME"
+						"com\\expojo\\app\\wexpojo\\ui\\aspect"
+						"Describe here"
+						"h"
+						"java"
+						0000 
+						""
+						01 0001 0000 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 1c581009 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 3194f00a 0002 00 00 
+					"Form<Void>"
+					"form"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 20a3500b 0002 00 00 
+					"RegisterCredentials"
+					"registerCredentials"
+					"Model used to store credentials during registration."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 3ec9b00c 0002 00 00 
+					"UserSignupForm"
+					"formPanel"
+					"The form embedded in the panel."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 3a02d00e 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 3569f00f 0002 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1dded031 0001 00 00 
+					"UserSignupForm"
+					"createSignupForm"
+					"Creates the signup form for this registration."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0c036011 0001 00 00 
+					"RegisterCredentials"
+					"createCredentialsModel"
+					"Creates the credentials model object. Overridden by derived classes to create extended register credentials."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2163a013 0001 00 00 
+					"void"
+					"onFormSubmit"
+					"Called when the registration form is submitted. Can be overridden to provide different behaviour in derived classes."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1d0a5014 0001 00 00 
+					"void"
+					"registerUser"
+					"Registers the user based on the credentia;s they provided."
+					0000 01 00000000 00 01 01 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 3d464033 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 0a009017 /Location/ 00000a3c 000004f6 00000e74 00000686 
+			{
+			}
+			/UOID/ 02 0c3b8000 00 37745971 
+			"PagebloomRegisterPanel"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\account"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 117f801e 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 1c581009 00 /UOID/ 02 0a009017 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 0cb7d018 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 0a822019 0001 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1dc15030 0001 00 00 
+					"UserSignupForm"
+					"createSignupForm"
+					"Creates the signup form for this registration."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2cf4401b 0001 00 00 
+					"RegisterCredentials"
+					"createCredentialsModel"
+					"Creates the credentials model object. Overridden by derived classes to create extended register credentials."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0145f01d 0001 00 00 
+					"void"
+					"registerUser"
+					"Registers the user based on the credentia;s they provided."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 117f801e /UOID/ 02 0c0b0020 /UOID/ 02 168fb01f 
+		/{ class CClass/ 
+			01 000b 0614b021 /Location/ 000003b6 00000168 0000088e 000003ac 
+			{
+			}
+			/UOID/ 02 0c3b8000 00 377c301e 
+			"UserSignupForm"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\account"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 15eab022 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 0c0b0020 00 /UOID/ 02 0614b021 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 28da2026 0003 00 00 
+					"Form"
+					"form"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 1ec47027 0002 00 00 
+					"WebMarkupContainer"
+					"personalDetailsContainer"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 098b1028 0003 00 00 
+					"boolean"
+					"confirmEmail"
+					"True if email should be confirmed."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 089fb029 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id, Credentials credentials, boolean confirmEmail"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 1d65102a 0001 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3e16e02b 0001 00 00 
+					"Form"
+					"getForm"
+					"Returns form"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1a4f002c 0001 00 00 
+					"WebMarkupContainer"
+					"getPersonalDetailsContainer"
+					"Returns the personal details WebMarkupContainer."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 325b302d 0001 00 00 
+					"void"
+					"onFormSubmit"
+					"Called by the form when it is submitted. May be left empty, or overridden for special behaviour in either derived or inline classes."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 05f78032 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/UOID/ 02 15eab022 
+		/{ class CClass/ 
+			01 000b 28b2b024 /Location/ 000004c4 000004ba 00000780 00000596 
+			{
+			}
+			/UOID/ 02 0c3b8000 00 378c42de 
+			"PagebloomUserSignupForm"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\account"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 19622025 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 0614b021 00 /UOID/ 02 28b2b024 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 2914802e 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id, Credentials credentials"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 06d7b02f 0001 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 19622025 
+	}
+	006b 
+	"com\\expojo\\app\\wexpojo\\ui\\aspect\\account"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 18bc3002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

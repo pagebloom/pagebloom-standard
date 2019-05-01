@@ -1,0 +1,177 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000000d 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 0afbe000 
+	"Landing"
+	"Home page and panels and other landing pages"
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 1a02b003 /Location/ 0000001e 0000015e 000001c2 00000276 
+			{
+			}
+			/UOID/ 02 0afbe000 00 372941ee 
+			"HomePage"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\landing"
+			"HomePage of the webapp."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0002 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 340e3006 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 
+					/{ class CClass/ 
+						01 000b 2aaf1007 /Location/ 0000003c 0000001e 000001a4 00000082 
+						{
+						}
+						/UOID/ 02 0afbe000 00 372ab967 
+						"WebsitePage"
+						"RENAME"
+						"com\\expojo\\app\\wexpojo\\ui\\aspect"
+						"Describe here"
+						"h"
+						"java"
+						0000 
+						""
+						00 0001 0000 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 1a02b003 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 25df8004 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"PageParameters parameters"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 2ba0d005 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 262fe00c 0001 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 2aaf1007 /UOID/ 02 340e3006 
+		/{ class CClass/ 
+			01 000b 192e7008 /Location/ 000002bc 0000001e 00000438 00000082 
+			{
+			}
+			/UOID/ 02 0afbe000 00 37282799 
+			"WebsitePanel"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 0a601009 /Location/ 000002a8 0000015e 0000044c 000001fe 
+			{
+			}
+			/UOID/ 02 0afbe000 00 372a7e6b 
+			"WelcomePanel"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\landing"
+			"Welcome panel typically used in the home page."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 3432f00a 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 192e7008 00 /UOID/ 02 0a601009 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 0260600b 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id"
+					0000 
+					""
+				/} class FConstructor/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 3432f00a 
+	}
+	0068 
+	"com\\sas\\app\\wexpojo\\ui\\aspect\\landing"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 2c2ff002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

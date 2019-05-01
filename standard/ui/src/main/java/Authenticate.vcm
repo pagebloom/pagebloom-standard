@@ -1,0 +1,700 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000045 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 2ded3000 
+	"Authenticate"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 261d5003 /Location/ 0000001e 0000015e 000002ee 000003de 
+			{
+			}
+			/UOID/ 02 2ded3000 00 372dfcae 
+			"AuthenticatePage"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\authenticate"
+			"Page that holds the log in form allowing users to authenticate with username (email) and password."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 00de400c 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 
+					/{ class CClass/ 
+						01 000b 3441300d /Location/ 000000d2 0000001e 0000023a 00000082 
+						{
+						}
+						/UOID/ 02 2ded3000 00 372ce169 
+						"WebsitePage"
+						"RENAME"
+						"com\\expojo\\app\\wexpojo\\ui\\aspect"
+						"Describe here"
+						"h"
+						"java"
+						0000 
+						""
+						01 0001 0000 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 261d5003 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 34130004 0001 01 01 
+					"int"
+					"acStandard"
+					"Standard authrorization: single logon form with email/password."
+					0000 01 00 7f 01 01 
+					"0"
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 3ee7a009 0003 00 00 
+					"int"
+					"authConfig"
+					"Authentication configuration type."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 13ed7005 0001 00 00 
+					"no type"
+					"Constructor"
+					""
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					"StringValueConversionException"
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 1ba2b006 0001 00 00 
+					"no type"
+					"Constructor"
+					""
+					0000 01 00000000 00 00 00 00 0000 
+					"final PageParameters parameters"
+					0000 
+					"StringValueConversionException"
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 31bbe007 0001 00 00 
+					"no type"
+					"Constructor"
+					"authConfig specifies the configuration of the auth panels."
+					0000 01 00000000 00 00 00 00 0000 
+					"final PageParameters parameters, int iAuthConfig"
+					0000 
+					"StringValueConversionException"
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 28668008 0002 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2333200a 0001 00 00 
+					"int"
+					"getAuthConfig"
+					"Returns authConfig"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1495400b 0001 00 00 
+					"void"
+					"setAuthConfig"
+					"Sets authConfig"
+					0000 01 00000000 00 01 00 00 0003 
+					"int authConfig"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 12df1014 0001 00 00 
+					"boolean"
+					"isAuthenticatePage"
+					"Pages returning true will not be redirected to log in page.
+
+This should only ever be overridden by the page used for authenticating the user eg., a page with a log on form."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 3441300d /UOID/ 02 00de400c 
+		/{ class CClass/ 
+			01 000b 1b57200e /Location/ 00000370 0000015e 00000668 00000276 
+			{
+			}
+			/UOID/ 02 2ded3000 00 372fb355 
+			"LoginFormWrapperPanel"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\authenticate"
+			"Panel located inside AuthenticatePage that wraps the LoginFormPanel. We wrap the LoginFormPanel to allow it to appear as a 'sub module' of the page. The LoginFormWrapperPanel can contain extra site specific text in it that is independent of the LoginFormPanel which can remain simple with only the fields required for authentication."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 2d93c00f 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 
+					/{ class CClass/ 
+						01 000b 0fa54010 /Location/ 000005c8 0000001e 00000744 00000082 
+						{
+						}
+						/UOID/ 02 2ded3000 00 372e18b1 
+						"WebsitePanel"
+						"RENAME"
+						"com\\expojo\\app\\wexpojo\\ui\\aspect"
+						"Describe here"
+						"h"
+						"java"
+						0000 
+						""
+						01 0001 0000 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 1b57200e 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 0cadb011 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 2d079012 0002 00 00 
+					"void"
+					"onInitialize"
+					"Adds components"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2af65013 0001 00 00 
+					"void"
+					"addAuthenticationPanels"
+					"Creates the LoginFormPanel and adds it. Overridden in derived classes to create their own custom LoginFormPanel(s) derivative."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 0fa54010 /UOID/ 02 2d93c00f 
+		/{ class CClass/ 
+			01 000b 24baf015 /Location/ 00000726 0000015e 00000a96 0000041a 
+			{
+			}
+			/UOID/ 02 2ded3000 00 372f0e42 
+			"LoginFormPanel"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\authenticate"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 25f8e016 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 0fa54010 00 /UOID/ 02 24baf015 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 24ebe017 0002 00 00 
+					"Button"
+					"loginBtn"
+					"NoDesc"
+					0000 01 00 7f 01 00 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 3a20e02f 0002 00 00 
+					"ICredentialSpec"
+					"credSpec"
+					"Credential specifications"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 3cb36018 0003 00 00 
+					"Credentials"
+					"credentials"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 2af26019 0003 00 00 
+					"Form"
+					"form"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 3278401a 0003 00 00 
+					"CheckBox"
+					"tAndCBox"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 0f1ca01b 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"String id"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 229c601c 0002 00 00 
+					"void"
+					"onInitialize"
+					"Adds components"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 232dc038 0001 00 00 
+					"void"
+					"invokeAuxiliaryChallenge"
+					"Invokes the auxiliary authentication challenge by forming the necessary URL that the auxiliary challenge requires which may possibly include, for example, a success URL and a fail URL. The details of the format of the URL is specific to any auxiliary challenge."
+					0000 01 00000000 00 01 00 00 0003 
+					"IAuxiliaryChallenge auxiliaryChallenge, String protocolAndDomain, IWexpojoSession wexpojoSession, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 26a2f01f 0001 00 00 
+					"void"
+					"submitForm"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					"AjaxRequestTarget target"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2f456020 0001 00 00 
+					"boolean"
+					"isAlternativeAuthentication"
+					"Overridden in alternative authentication forms to return true."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 2842f02e 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/UOID/ 02 25f8e016 
+		/{ class CClass/ 
+			01 000b 303c5022 /Location/ 00000924 0000001e 00000ac8 00000082 
+			{
+			}
+			/UOID/ 02 2ded3000 00 372e9415 
+			"ICredentialSpec"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			00 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 05434023 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0555a024 000009ec 
+					{
+					}
+					00 0002 00 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 12a00025 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 75206e69 /UOID/ 02 0555a024 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 09313026 000009ec 
+					{
+					}
+					01 0002 01 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 22239027 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 2e393130 /UOID/ 02 09313026 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 12a00025 /UOID/ 02 22239027 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 303c5022 /UOID/ 02 24baf015 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 306c6028 /Location/ 0000044c 000002b2 00000550 00000316 
+			{
+			}
+			/UOID/ 02 2ded3000 00 3733146e 
+			"IWebsite"
+			"RENAME"
+			"com\\sas\\app\\wexpojo\\biz\\website"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 2be20029 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 3f30302a 000002da 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 0dbdf02b ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 6e656d65 /UOID/ 02 3f30302a 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1523902c 000002da 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 06dbd02d 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 0103cb20 /UOID/ 02 1523902c 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 0dbdf02b /UOID/ 02 06dbd02d 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 306c6028 /UOID/ 02 24baf015 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 17c00030 /Location/ 0000033e 00000348 00000636 000003ac 
+			{
+			}
+			/UOID/ 02 2ded3000 00 37734e09 
+			"PagebloomStdSession"
+			"RENAME"
+			"com\\sas\\platform\\pagebloom\\std\\session"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 15e92031 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0df0a032 00000352 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 34c13033 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 2e390021 /UOID/ 02 0df0a032 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2049d034 00000352 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 2d36d035 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 53797469 /UOID/ 02 2049d034 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 34c13033 /UOID/ 02 2d36d035 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 17c00030 /UOID/ 02 24baf015 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 10644039 /Location/ 00000410 000003f2 000005f0 00000456 
+			{
+			}
+			/UOID/ 02 2ded3000 00 37b12dd2 
+			"IAuxiliaryChallenge"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			00 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 2263403a 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 2e33503b 000003fc 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 0f61903c ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 6f740061 /UOID/ 02 2e33503b 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1826803d 000003fc 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 2880c03e 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 1826803d 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 0f61903c /UOID/ 02 2880c03e 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 10644039 /UOID/ 02 24baf015 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 208ab03f /Location/ 00000690 000004c4 00000960 00000528 
+			{
+			}
+			/UOID/ 02 2ded3000 00 37b2fccf 
+			"ExpojoAuthenticationService"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 0ce01040 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 23e3a041 0000078a 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 21535042 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 2e736173 /UOID/ 02 23e3a041 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 035a1043 0000078a 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 11c86044 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 492e6d6c /UOID/ 02 035a1043 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 21535042 /UOID/ 02 11c86044 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 208ab03f /UOID/ 02 24baf015 
+		/} class AssociationChain/ 
+	}
+	006e 
+	"com\\sas\\app\\wexpojo\\ui\\aspect\\authenticate"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 2f6a1002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

@@ -1,0 +1,82 @@
+// -[KeepHeading]-
+
+
+// -[Copyright]-
+
+/**
+ * (c) 2008,2019. Step Ahead Software Pty Ltd. All rights reserved.
+ * Usage is governed by the terms of the Apache 2 License.
+ * 
+ * Source file created and managed by Javelin (TM) Step Ahead Software.
+ * To maintain code and model synchronization you may directly edit code in method bodies
+ * and any sections starting with the 'Keep_*' marker. Make all other changes via Javelin.
+ * See http://stepaheadsoftware.com for more details.
+ */
+package com.expojo.app.wexpojo.ui.aspect.dashboard;
+
+import java.lang.*;
+import com.sas.app.wexpojo.ui.aspect.ProtectedPage;
+
+
+// -[KeepBeforeClass]-
+
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+
+// -[Class]-
+
+/**
+ * Class Name : DashboardPage
+ * Diagram    : Dashboard
+ * Project    : WexPOJO - Wicket + exPOJO application core
+ * Type       : concrete
+ * DashboardPage of the webapp.
+ * Typically shows some dials, graphs, etc., to indicate current status.
+ * Will also typically have menu items allow user to navigate to different aspects of
+ * the web app.
+ * 
+ * @author Chris Colman
+ */
+public 
+class DashboardPage extends ProtectedPage
+{
+// -[KeepWithinClass]-
+
+
+// -[Fields]-
+
+
+// -[Methods]-
+
+/**
+ * Describe here
+ */
+public void onInitialize()
+{
+	super.onInitialize();
+	
+	body.add(new DashboardPanel("dashboardPanel"));
+}
+
+
+
+/**
+ * Constructs the object
+ */
+public DashboardPage()
+
+
+{
+	this(null);
+}
+
+/**
+ * Constructs the object
+ */
+public DashboardPage(PageParameters parameters)
+{
+	super(parameters);
+}
+
+}
+
+

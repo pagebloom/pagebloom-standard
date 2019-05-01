@@ -1,0 +1,289 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000004d 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 2c6bc000 
+	"Error page and [panel]"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 2dc73003 /Location/ 000004d8 0000001e 000005f0 00000082 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 37197b17 
+			"WebPage"
+			"RENAME"
+			"org\\apache\\wicket\\markup\\html"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 10323004 /Location/ 0000001e 0000015e 000003f2 00000456 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 3718b8a3 
+			"WebsitePage"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect"
+			"WexPOJO supports multiple website within the one app.
+
+Website is a page that is aware of the website that it is rendering for.
+"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 390bc005 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 2dc73003 00 /UOID/ 02 10323004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 3199b048 0002 00 00 
+					"WebMarkupContainer"
+					"body"
+					"MarkupContainer for the entire body. This is used to enable us to do attribute modification on the body tag if required."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 0acc1049 0001 01 01 
+					"String"
+					"bodyId"
+					"ID of the body component in markup."
+					0000 01 00 7f 01 01 
+					"\"body\""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 2e03c006 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 1f5b1015 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"PageParameters parameters"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 034fa04a 0001 00 00 
+					"WebMarkupContainer"
+					"getBody"
+					"Returns body"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1265502a 0002 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1ce9c02b 0001 00 00 
+					"void"
+					"injectHeaderData"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2e1a9007 0001 00 00 
+					"IWebsite"
+					"getWebsiteFromDomainName"
+					"Derives the Website object from the domain name."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 095de029 0001 00 00 
+					"String"
+					"getVariation"
+					"Returns the variation (if any) for the associated website."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1ba7403b 0001 00 00 
+					"IUser"
+					"getUser"
+					"Attempts to derive the user from the session."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 118ed04b 0001 00 00 
+					"boolean"
+					"isAuthenticatePage"
+					"Pages returning true will not be redirected to log in page.
+
+This should only ever be overridden by the page used for authenticating the user eg., a page with a log on form."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 390bc005 
+		/{ class CClass/ 
+			01 000b 29348016 /Location/ 00000578 00000320 0000071c 00000474 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 37184707 
+			"ErrorPage"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\aspect\\error"
+			"Displays an error."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 184a504c 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 10323004 00 /UOID/ 02 29348016 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 03ed4018 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 3baf1019 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"PageParameters parameters"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 2f784020 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"final Throwable throwable, final Page page"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 2e84e01c 0001 00 00 
+					"void"
+					"onInitialize"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 1c518032 /Location/ 000007d0 000002f8 00000898 0000035c 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 372923ec 
+			"Panel"
+			"RENAME"
+			"org\\apache\\wicket\\markup\\html\\panel"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 184a504c 
+	}
+	0072 
+	"com\\sas\\app\\wexpojo\\ui"
+	0000 
+	/{ class GuiMgdRelationGen/ 
+		01 04b0 02f9300e 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class GuiMgdRelationGen/ 
+/} class ClassDiagram/ 

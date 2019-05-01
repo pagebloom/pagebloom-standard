@@ -1,0 +1,3 @@
+foundationAndContextFactory.vcm ClassId base: 0
+Module.vcm ClassId base: 0
+Environment.vcm ClassId base: 0

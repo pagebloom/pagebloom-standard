@@ -1,0 +1,292 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000001b 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 3069f000 
+	"Module"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 31367003 /Location/ 000000a0 0000001e 00000320 00000082 
+			{
+			}
+			/UOID/ 02 3069f000 00 378a55fc 
+			"IdentityAccessModuleJdo"
+			"RENAME"
+			"com\\sas\\framework\\iam\\module\\jdo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 22565004 /Location/ 0000001e 000001b8 000003a2 00000258 
+			{
+			}
+			/UOID/ 02 3069f000 00 378abb97 
+			"PagebloomStdIdentityAccessModule"
+			"RENAME"
+			"com\\sas\\platform\\pagebloom\\std\\iam\\module"
+			"Identity Access Module for pagebloom community."
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 3d135005 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 31367003 00 /UOID/ 02 22565004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 17795006 0001 00 00 
+					"void"
+					"addComponents"
+					"Adds the repository and services components for a module to the ModelExposer."
+					0000 01 00000000 00 01 00 00 0003 
+					"ModelExposer modelExposer"
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 3d135005 
+		/{ class CClass/ 
+			01 000b 19282007 /Location/ 000004a6 000001d6 00000776 0000023a 
+			{
+			}
+			/UOID/ 02 3069f000 00 37891253 
+			"ExpojoAuthenticationService"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 3c6b7008 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 
+					/{ class CClass/ 
+						01 000b 194c9009 /Location/ 000004f6 000000e6 00000726 0000014a 
+						{
+						}
+						/UOID/ 02 3069f000 00 378b19db 
+						"IAuthenticationService"
+						"RENAME"
+						"com\\sas\\framework\\iam\\authentication"
+						"Describe here"
+						"h"
+						"java"
+						0002 
+						""
+						01 0001 0001 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 19282007 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 1b3ff00a 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0f21900b 000001f4 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 2d6a800c 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 79726169 /UOID/ 02 0f21900b 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2c4ab00d 000001f4 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 0d3d200e ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 5c005c61 /UOID/ 02 2c4ab00d 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 2d6a800c /UOID/ 02 0d3d200e 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 19282007 /UOID/ 02 22565004 
+		/} class AssociationChain/ 
+		/UOID/ 02 194c9009 /UOID/ 02 3c6b7008 
+		/{ class AssociationChain/ 
+			01 0069 15b4b00f 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 3fa3d010 00000352 
+					{
+					}
+					00 0002 00 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 34c30011 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 3fa3d010 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1ea0d012 000000f0 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 0594c013 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 3431005c /UOID/ 02 1ea0d012 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 34c30011 /UOID/ 02 0594c013 
+			}
+			0003 /Bend coords/ 0000035c 000000fa 
+			/NullObj/ 00 /UOID/ 02 194c9009 /UOID/ 02 22565004 
+		/} class AssociationChain/ 
+		/{ class Annotation/ 
+			01 0064 19542014 /Location/ 000005d2 000002da 000005e6 000002e4 
+			{
+			}
+			""
+			0810 0002 00000003 
+		/} class Annotation/ 
+		/{ class CClass/ 
+			01 000b 22c1b015 /Location/ 0000056e 000003ca 000006fe 0000042e 
+			{
+			}
+			/UOID/ 02 3069f000 00 3788cada 
+			"ModelExposer"
+			"RENAME"
+			"com\\sas\\framework\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 180a0016 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 119fa017 00000352 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 2a870018 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 119fa017 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1cb0c019 000003f2 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 3eadc01a ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 1cb0c019 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 2a870018 /UOID/ 02 3eadc01a 
+			}
+			0003 /Bend coords/ 0000035c 000003fc 
+			/NullObj/ 00 /UOID/ 02 22c1b015 /UOID/ 02 22565004 
+		/} class AssociationChain/ 
+	}
+	006a 
+	"com\\sas\\platform\\pagebloom\\iam\\module"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 26de5002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

@@ -1,0 +1,40 @@
+00d0def1 7ffe 0000 00 00000002 00000001 00000002 0007 00000101 00000000 00000009 01 
+/{ class ModelRepository/ 
+	01 2134 2c6bc000 
+	{
+	}
+	"Chris Colman"
+	"Step Ahead Software"
+	"pagebloom common"
+	"(c) 2008,2019. Step Ahead Software Pty Ltd. All rights reserved.
+Usage is governed by the terms of the Apache 2 License."
+	00 01 00 
+	"h"
+	"java"
+	0000012c 000000c8 
+	"com\\sas\\app\\wexpojo"
+	""
+	""
+	{
+		/{ class ClassDiagramRef/ 
+			01 2135 02784005 
+			"DEFAULT"
+			"Credentials"
+			/UOID/ 02 2c6bc000 
+			"Credentials.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 19c0c007 
+			"DEFAULT"
+			"Authentication Impl"
+			/UOID/ 02 2c6bc000 
+			"authentication.vcm"
+		/} class ClassDiagramRef/ 
+	}
+	/{ class MakeRunOptions/ 
+		01 048e 086b8001 0004 0000 0000 01 
+		"ant compile"
+		"ant run"
+		01 00 
+	/} class MakeRunOptions/ 
+/} class ModelRepository/ 

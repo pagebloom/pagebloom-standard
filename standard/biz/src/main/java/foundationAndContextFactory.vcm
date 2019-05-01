@@ -1,0 +1,714 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 000001ef 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 394d7000 
+	"Expojo Foundation and Context Factory"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 0ab71044 /Location/ 000006f4 00000302 00000a28 00000366 
+			{
+			}
+			/UOID/ 02 394d7000 00 0000006f 
+			"NucleusJdoExpojoContextFactory"
+			"RENAME"
+			"com\\sas\\framework\\expojo\\jdo\\datanucleus"
+			"Provide of JDO bound ExpojoContextS."
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 01 00 0000 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 12c3d186 /Location/ 00000ab4 000000e6 00000c44 0000014a 
+			{
+			}
+			/UOID/ 02 394d7000 00 2c4d72b4 
+			"ServletContext"
+			"RENAME"
+			"javax\\servlet"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 1d5a718c /Location/ 000006f4 0000037a 00000910 000003de 
+			{
+			}
+			/UOID/ 02 394d7000 00 2c4f891f 
+			"ServletContextEvent"
+			"RENAME"
+			"javax\\servlet"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 080081a0 /Location/ 0000017c 000005f0 0000021c 00000654 
+			{
+			}
+			/UOID/ 02 394d7000 00 37535c1f 
+			"Ex"
+			"RENAME"
+			"com\\sas\\framework\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class Annotation/ 
+			01 0064 2818a1a8 /Location/ 0000001e 0000001e 00000032 00000028 
+			{
+			}
+			""
+			0810 0002 6c696620 
+		/} class Annotation/ 
+		/{ class CClass/ 
+			01 000b 20a331ae /Location/ 0000026c 000001f4 0000044c 00000258 
+			{
+			}
+			/UOID/ 02 394d7000 00 37521f76 
+			"ExpojoFoundation"
+			"RENAME"
+			"com\\sas\\framework\\expojo\\servlet"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0001 01 00 0000 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 3ac171af /Location/ 000000f0 0000030c 000005c8 0000058c 
+			{
+			}
+			/UOID/ 02 394d7000 00 37520528 
+			"PagebloomStdExpojoFoundation"
+			"RENAME"
+			"com\\sas\\platform\\pagebloom\\std\\expojo"
+			"Foundation of the pagebloom standard application."
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 2b4251b0 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 20a331ae 00 /UOID/ 02 3ac171af 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 362621b3 0001 00 00 
+					"ExpojoContextFactory"
+					"createExpojoContextFactory"
+					"Overridden in a derived class to create the ExpojoContextFactory."
+					0000 01 00000000 00 01 00 00 0003 
+					"ServletContextEvent event"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0846b1c6 0001 00 00 
+					"void"
+					"addModules"
+					"Adds the IModule required for the application."
+					0000 01 00000000 00 01 00 00 0003 
+					"IModulesProvider modulesProvider"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 364be1b4 0002 00 00 
+					"void"
+					"initContextPrePersistenceInit"
+					"Performs the parts of the app/context initialization that must occur before the persistence framework has been initialized.
+For example this method will typically be overridden to perform the reading of parameters configured in context.xml or some other config file.
+It can be assumed that the persistence framework has not yet been initialized by the time this method is called and therefore initialization of objects that can determine the persistence framework initialization behaviour can occur in this method."
+					0000 01 00000000 00 01 00 00 0003 
+					"final ServletContextEvent event"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 366451b5 0001 00 00 
+					"boolean"
+					"hasGenesisObjects"
+					"Returns true if the datastore already has the genesis objects (i.e. if it is not a new, blank system).
+If this method returns false then establishGenesisObjects will be called to establish genesis objects for a new blank system.
+NOTE: This method is called each time the servlet context starts up so it is important to check if a well known 'key' genesis object already exists (via a query method in an appropriate repository) and only return false if this key object can not be found."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 144d91e4 0001 00 00 
+					"void"
+					"addWebsites"
+					"Override to add websites to the repository."
+					0000 01 00000000 00 01 00 00 0003 
+					"IWebsiteRepository websiteRepository"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 14ce81e5 0001 00 00 
+					"void"
+					"addWebsite"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					"IWebsiteRepository websiteRepository, int id, String name, String subdomain, String domainName, int templateId, String theme, IWebsiteBehaviour behaviour"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 299841d8 0001 00 00 
+					"void"
+					"initDataModel"
+					"Initializatoin of the model.
+Prerequisite: data model already exists.
+Use: this method can be used to perform data migration etc., if required."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 211c61ed 0002 00 00 
+					"void"
+					"readConfigParameters"
+					"Called during app/context initialization.
+For example this method will typically be overridden to perform the reading of parameters configured in context.xml or some other config file.
+It can be assumed that the persistence framework has not yet been initialized by the time this method is called and therefore initialization of objects that can determine the persistence framework initialization behaviour can occur in this method."
+					0000 01 00000000 00 01 00 00 0003 
+					"ServletContext servletContext"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 232251ee 0001 00 00 
+					"Environment"
+					"newEnvironment"
+					"Constructs a new environment object.
+Override this method in derived classes to use an enhanced Environment class tailored for the specific needs of the application."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 3c4061d4 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/UOID/ 02 2b4251b0 
+		/{ class AssociationChain/ 
+			01 0069 3b0ae1b6 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 2c93f1b7 00000348 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 39ce31b8 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 2c93f1b7 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 0fb761b9 00000348 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 20e341ba ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 0fb761b9 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 39ce31b8 /UOID/ 02 20e341ba 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 0ab71044 /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 0306c1bb 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 100f31bc 000003ac 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 0029c1bd 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 100f31bc 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 0aa101be 000003ac 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 18e2d1bf ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 6a5c6e69 /UOID/ 02 0aa101be 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 0029c1bd /UOID/ 02 18e2d1bf 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1d5a718c /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 03f381c0 /Location/ 000004ce 000001fe 000006fe 00000262 
+			{
+			}
+			/UOID/ 02 394d7000 00 375393f4 
+			"ExpojoContextFactory"
+			"RENAME"
+			"com\\sas\\framework\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 133ff1c1 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 294871c2 00000514 
+					{
+					}
+					00 0002 00 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 3c1601c3 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 294871c2 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1d0531c4 00000514 
+					{
+					}
+					01 0002 01 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 3bf3b1c5 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 1d0531c4 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 3c1601c3 /UOID/ 02 3bf3b1c5 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 03f381c0 /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 21feb1c7 /Location/ 000003e8 000005f0 000005b4 00000654 
+			{
+			}
+			/UOID/ 02 394d7000 00 37536c6b 
+			"IModulesProvider"
+			"RENAME"
+			"com\\sas\\framework\\system"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 2b3f91c8 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 23f0d1c9 000004ce 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 322161ca 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 23f0d1c9 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3ab7f1cb 000004ce 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 1b4791cc 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 3ab7f1cb 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 322161ca /UOID/ 02 1b4791cc 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 21feb1c7 /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 2425b1cd /Location/ 000006f4 000003f2 00000b2c 00000456 
+			{
+			}
+			/UOID/ 02 394d7000 00 3789fa66 
+			"PagebloomStdIdentityAccessModule"
+			"RENAME"
+			"com\\sas\\platform\\pagebloom\\std\\iam\\module"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 118aa1ce 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 3042d1cf 0000041a 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 056071d0 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 3042d1cf 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1c80e1d1 0000041a 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 3bad21d2 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 64657220 /UOID/ 02 1c80e1d1 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 056071d0 /UOID/ 02 3bad21d2 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 2425b1cd /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class Annotation/ 
+			01 0064 35f5a1d6 /Location/ 000000c8 00000078 000002c4 00000136 
+			{
+			}
+			"Would be convenient if application object was able to add modules. That would avoid the need to override the foundation class just for the purpose of adding modules."
+			0810 0002 73736563 
+		/} class Annotation/ 
+		/{ class CClass/ 
+			01 000b 35ab61d9 /Location/ 000006f4 0000047e 000008e8 000004e2 
+			{
+			}
+			/UOID/ 02 394d7000 00 37bf7c38 
+			"IWebsiteRepository"
+			"RENAME"
+			"com\\sas\\app\\wexpojo\\biz\\website"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			00 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 19ba31da 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 387421db 000004b0 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 02eee1dc 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 387421db 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 231051dd 000004b0 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 12d481de ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 6a5c6e69 /UOID/ 02 231051dd 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 02eee1dc /UOID/ 02 12d481de 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 35ab61d9 /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 345931df 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 24a6b1e0 000001ae 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 336871e1 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 6a5c6e69 /UOID/ 02 24a6b1e0 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1acd71e2 000001ae 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 0cfc01e3 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 50287265 /UOID/ 02 1acd71e2 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 336871e1 /UOID/ 02 0cfc01e3 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 080081a0 /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 1c7651e6 /Location/ 000006f4 0000050a 000007e4 0000056e 
+			{
+			}
+			/UOID/ 02 394d7000 00 37bd010c 
+			"Website"
+			"RENAME"
+			"com\\sas\\app\\wexpojo\\biz\\website"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 1556b1e7 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 339501e8 00000514 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 223651e9 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 39313032 /UOID/ 02 339501e8 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 0eee01ea 00000514 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 243f61eb ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 0eee01ea 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 223651e9 /UOID/ 02 243f61eb 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1c7651e6 /UOID/ 02 3ac171af 
+		/} class AssociationChain/ 
+	}
+	0096 
+	"com\\sas\\platform\\pagebloom\\std\\expojo"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 325b4001 
+		""
+		0000 00000000 00000000 00 00 00 00 00 00 
+		"OpLckVersion"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

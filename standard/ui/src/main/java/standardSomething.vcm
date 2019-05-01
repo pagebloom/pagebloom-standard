@@ -1,0 +1,269 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000025 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 2c6bc000 
+	"Pages"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 2dc73003 /Location/ 0000017c 0000001e 00000294 00000082 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 37197b17 
+			"WebPage"
+			"RENAME"
+			"org\\apache\\wicket\\markup\\html"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 10323004 /Location/ 0000001e 000001a4 000003f2 000002bc 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 3718b8a3 
+			"WebsitePage"
+			"RENAME"
+			"com\\sas\\app\\wexpojo\\ui"
+			"WexPOJO supports multiple website within the one app.
+
+Website is a page that is aware of the website that it is rendering for.
+"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 390bc005 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 2dc73003 00 /UOID/ 02 10323004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 2e03c006 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class FConstructor/ 
+					01 000c 1f5b1015 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"PageParameters parameters"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 2e1a9007 0001 00 00 
+					"IWebsite"
+					"getWebsiteFromDomainName"
+					"Derives the Website object from the domain name."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 390bc005 
+		/{ class CClass/ 
+			01 000b 02aad008 /Location/ 0000055a 000001a4 0000065e 00000208 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 371a2f7b 
+			"IWebsite"
+			"RENAME"
+			"com\\sas\\app\\wexpojo\\biz\\website"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			00 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 2c16b009 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 320f000a 000001c2 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 2c99e00b 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 320f000a 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2306c00c 000001c2 
+					{
+					}
+					01 0002 01 01 0002 0080 03 
+					"website"
+					/{ class RoleText/ 
+						01 0071 0f10100d ffffff40 ffffffbd 00000010 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 2306c00c 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 2c99e00b /UOID/ 02 0f10100d 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 02aad008 /UOID/ 02 10323004 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 1658b00f /Location/ 000006b8 00000212 000008c0 00000276 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 3718ccd0 
+			"WexpojoApplication"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 1234d010 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 240ca011 00000230 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 0dcd8012 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 240ca011 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3b3cc013 00000230 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 344d8014 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 3b3cc013 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 0dcd8012 /UOID/ 02 344d8014 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1658b00f /UOID/ 02 10323004 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 07e0701e /Location/ 00000398 00000032 00000578 00000096 
+			{
+			}
+			/UOID/ 02 2c6bc000 00 3719ba26 
+			"AbstractErrorPage"
+			"RENAME"
+			"org\\apache\\wicket\\markup\\html\\pages"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 3bd3801f 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 2dc73003 00 /UOID/ 02 07e0701e 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 3bd3801f 
+	}
+	006b 
+	"com\\sas\\app\\wexpojo\\ui"
+	0000 
+	/{ class GuiMgdRelationGen/ 
+		01 04b0 02f9300e 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class GuiMgdRelationGen/ 
+/} class ClassDiagram/ 

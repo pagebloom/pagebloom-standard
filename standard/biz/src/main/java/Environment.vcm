@@ -1,0 +1,290 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000001f 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 29a99000 
+	"Environment"
+	""
+	""
+	""
+	{
+		/{ class CClass/ 
+			01 000b 3bc02003 /Location/ 0000001e 0000001e 0000032a 00000622 
+			{
+			}
+			/UOID/ 02 29a99000 00 378d772d 
+			"Environment"
+			"RENAME"
+			"com\\sas\\framework\\system"
+			"Used to hold configuration specific to a particular environment instance.
+Configuration of an Environment may take place via a properties files, context.xml etc.,"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+			}
+			{
+				/{ class Data/ 
+					01 000d 2aa55004 0003 01 00 
+					"Environment"
+					"self"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 088aa007 0003 00 00 
+					"boolean"
+					"demoMode"
+					"Set to true if the app is running in a 'demo' mode. Security, authentication is a lot loser as it is not a *real* system."
+					0000 01 00 7f 01 01 
+					"false"
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 362f700a 0003 00 00 
+					"InstanceType"
+					"instanceType"
+					"Instance type of this environment."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 1158e012 0003 00 00 
+					"String"
+					"appHost"
+					"Hostname of app."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 2f8ee01c 0003 00 00 
+					"String"
+					"appSubdomain"
+					"An optional subdomain for the host domain name can be supplied.
+eg., 
+host is pagebloom.com
+subdomain is sports
+
+So full hostname is sports.pagebloom.com
+"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 16010013 0003 00 00 
+					"String"
+					"appPort"
+					"Port number of app."
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 1a534014 0003 00 00 
+					"boolean"
+					"appSecuredBySsl"
+					"True if secured by SSL."
+					0000 01 00 7f 01 01 
+					"false"
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 35983005 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 2ee57015 0001 00 00 
+					"String"
+					"getAppHost"
+					"Returns appHost"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0599f016 0001 00 00 
+					"void"
+					"setAppHost"
+					"Sets appHost"
+					0000 01 00000000 00 01 00 00 0003 
+					"String appHost"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 30b2101d 0001 00 00 
+					"String"
+					"getAppSubdomain"
+					"Returns appSubdomain"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1d2e701e 0001 00 00 
+					"void"
+					"setAppSubdomain"
+					"Sets appSubdomain"
+					0000 01 00000000 00 01 00 00 0003 
+					"String appSubdomain"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3033a017 0001 00 00 
+					"String"
+					"getAppPort"
+					"Returns appPort"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 363f8018 0001 00 00 
+					"void"
+					"setAppPort"
+					"Sets appPort"
+					0000 01 00000000 00 01 00 00 0003 
+					"String appPort"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 10aa0019 0001 00 00 
+					"boolean"
+					"getAppSecuredBySsl"
+					"Returns appSecuredBySsl"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2c8a701a 0001 00 00 
+					"void"
+					"setAppSecuredBySsl"
+					"Sets appSecuredBySsl"
+					0000 01 00000000 00 01 00 00 0003 
+					"boolean appSecuredBySsl"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1db9200b 0001 00 00 
+					"InstanceType"
+					"getInstanceType"
+					"Returns instanceType"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0e48b00c 0001 00 00 
+					"void"
+					"setInstanceType"
+					"Sets instanceType"
+					0000 01 00000000 00 01 00 00 0003 
+					"InstanceType instanceType"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 38c7b00e 0001 00 00 
+					"String"
+					"getHostnamePrefix"
+					"Returns '' for prod. 'dev' for dev etc.,"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 39859006 0001 01 00 
+					"Environment"
+					"get"
+					"Returns self"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 12135008 0001 00 00 
+					"boolean"
+					"getDemoMode"
+					"Returns demoMode"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 005d1009 0001 00 00 
+					"void"
+					"setDemoMode"
+					"Sets demoMode"
+					0000 01 00000000 00 01 00 00 0003 
+					"boolean demoMode"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 34871010 0001 00 00 
+					"String"
+					"getBaseUrl"
+					"Returns a string like:
+
+https://www.mydomain.com"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 02c3201b 0001 00 00 
+					"String"
+					"getBaseUrl"
+					"Returns a string like:
+
+https://www.mydomain.com:8080
+
+(no port will be appended if the port is 80)"
+					0000 01 00000000 00 01 00 00 0003 
+					"String hostname"
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+	}
+	0065 
+	"com\\sas\\framework\\system"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 03c0e002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

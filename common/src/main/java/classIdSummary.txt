@@ -1,0 +1,3 @@
+untitled.vcm ClassId base: 0
+WexPOJO - App Core.vcm ClassId base: 0
+Session.vcm ClassId base: 0

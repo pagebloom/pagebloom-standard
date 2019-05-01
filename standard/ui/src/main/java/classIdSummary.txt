@@ -1,0 +1,8 @@
+WexPOJO - App Core.vcm ClassId base: 0
+Session.vcm ClassId base: 0
+Account.vcm ClassId base: 0
+Authenticate.vcm ClassId base: 0
+Landing.vcm ClassId base: 0
+standardSomething.vcm ClassId base: 0
+Error.vcm ClassId base: 0
+Dashboard.vcm ClassId base: 0

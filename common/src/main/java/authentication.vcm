@@ -1,0 +1,1317 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 000000b5 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 2003b000 
+	"Authentication Impl"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 2b6cd008 /Location/ 000001f4 000006a4 000004d8 00000744 
+			{
+			}
+			/UOID/ 02 2003b000 00 372da29c 
+			"IAuthenticator"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0002 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 3f495009 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Finds a user with the given credentials (username and password and optionally realm) and returns it. This is called to authenticate a user in the system.
+If authentication failed null will be retuned otherwise a User object will be returned."
+					0000 01 00000000 00 01 01 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 1d76900a /Location/ 000003c0 0000023a 0000049c 0000029e 
+			{
+			}
+			/UOID/ 02 2003b000 00 372eebcd 
+			"IRealm"
+			"RENAME"
+			"com\\sas\\framework\\iam\\realm"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 1b28300b 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 35bb500c 00000424 
+					{
+					}
+					00 0002 00 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 313b400d 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 6176616a /UOID/ 02 35bb500c 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2be2500e 00000424 
+					{
+					}
+					01 0002 01 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 0e68c00f 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 76726553 /UOID/ 02 2be2500e 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 313b400d /UOID/ 02 0e68c00f 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1d76900a /UOID/ 02 2b6cd008 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 0e562010 /Location/ 000000aa 00000488 0000015e 000004ec 
+			{
+			}
+			/UOID/ 02 2003b000 00 372f65fe 
+			"IUser"
+			"RENAME"
+			"com\\sas\\framework\\iam\\user"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 22c02011 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 21842012 000006c2 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 05ef3013 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 616a5c6e /UOID/ 02 21842012 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2bc84014 0000010e 
+					{
+					}
+					01 0002 01 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 13642015 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 76726553 /UOID/ 02 2bc84014 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 05ef3013 /UOID/ 02 13642015 
+			}
+			0003 /Bend coords/ 00000118 000006cc 
+			/NullObj/ 00 /UOID/ 02 0e562010 /UOID/ 02 2b6cd008 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 33420020 /Location/ 0000001e 0000001e 000004f6 000000fa 
+			{
+			}
+			/UOID/ 02 2003b000 00 374c0b09 
+			"IAuthenticationService"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication"
+			"Interface for any authentication service."
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0000 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 05fc9021 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Calls authenticateCredentials on each of the  IAuthenticators in the authenticators list until one passes authentication or the list is exhausted. "
+					0000 01 00000000 00 01 01 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 14981022 0001 00 00 
+					"IAuxiliaryChallenge"
+					"userRequiresAuxiliaryChallenge"
+					"While an IAuxiliaryChallenge may be associated with this IAuthenticationService it may not be required in every circumstance (e.g. business rules may be configured to only require an auxiliary authentication challenge in certain cases: e.g. user has logged in a device that they have never logged in from before).
+This method will only return non null if the user is required to perform a challenge for an auxiliary factor of authentication (e.g. enter a security code sent via email or an SMS)."
+					0000 01 00000000 00 01 01 00 0003 
+					"IUser user, String deviceId, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 14e7b023 /Location/ 0000012c 000002b2 00000370 000003ca 
+			{
+			}
+			/UOID/ 02 2003b000 00 374e48ed 
+			"IAuxiliaryChallenge"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication"
+			"An auxiliary authentication factor that may be required after the initial identification+password authentication has taken place."
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0000 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 07459027 0001 00 00 
+					"String"
+					"getChallengeUrl"
+					"Returns the URL that the user's browser will be redirected to so that they can perform the auxiliary authentication challenge."
+					0000 01 00000000 00 01 01 00 0003 
+					"IUser user, String deviceId, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 249dd024 0001 00 00 
+					"String"
+					"getSuccessUrl"
+					"Returns the URL that the user's browser should be redirected to after successfully passing the auxiliary authentication challenge."
+					0000 01 00000000 00 01 01 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 10970025 0001 00 00 
+					"String"
+					"getFailUrl"
+					"Returns the URL that the user's browser should be redirected to after failing to pass the auxiliary authentication challenge."
+					0000 01 00000000 00 01 01 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 37958028 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 33239029 000000b4 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 3e27c02a 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 6e656d65 /UOID/ 02 33239029 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 32c0d02b 000000b4 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 217f102c 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 0000005c /UOID/ 02 32c0d02b 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 3e27c02a /UOID/ 02 217f102c 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 0e562010 /UOID/ 02 33420020 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 00c5802d 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 359e302e 00000460 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 35cf702f 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 64657461 /UOID/ 02 359e302e 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 21115030 00000460 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 3e664031 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 21115030 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 35cf702f /UOID/ 02 3e664031 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1d76900a /UOID/ 02 33420020 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 12bce032 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0f1bf033 000002d0 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 26c3f034 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 0f1bf033 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 00c0f035 000003de 
+					{
+					}
+					01 0002 01 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 34949036 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 64657220 /UOID/ 02 00c0f035 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 26c3f034 /UOID/ 02 34949036 
+			}
+			0003 /Bend coords/ 000003e8 000002da 
+			/NullObj/ 00 /UOID/ 02 1d76900a /UOID/ 02 14e7b023 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 1ec1c037 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 20114038 00000136 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 11a11039 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 20114038 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 27d9a03a 00000136 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 2f8f503b 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 27d9a03a 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 11a11039 /UOID/ 02 2f8f503b 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 0e562010 /UOID/ 02 14e7b023 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 16fdd03c 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 03a1b03d 00000186 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 36dd603e 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 03a1b03d 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 354ae03f 00000186 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 098f4040 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 354ae03f 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 36dd603e /UOID/ 02 098f4040 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 14e7b023 /UOID/ 02 33420020 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 0de94041 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0cda5042 0000006e 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 0583f043 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 0cda5042 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2586b044 00000708 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 383d0045 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 616a5c6e /UOID/ 02 2586b044 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 0583f043 /UOID/ 02 383d0045 
+			}
+			0003 /Bend coords/ 00000078 00000712 
+			/NullObj/ 00 /UOID/ 02 2b6cd008 /UOID/ 02 33420020 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 355cf046 /Location/ 00000c4e 0000015e 0000113a 000002b2 
+			{
+			}
+			/UOID/ 02 2003b000 00 37519775 
+			"ExpojoAuthenticationService"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"Core expojo based IAuthenticationService impl."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 04936047 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 33420020 00 /UOID/ 02 355cf046 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+				/{ class BaseClassRef/ 
+					01 006b 236e404d 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0001 
+					/{ class CClass/ 
+						01 000b 1bcb704e /Location/ 00000dca 0000001e 00000fbe 00000082 
+						{
+						}
+						/UOID/ 02 2003b000 00 3753ff9d 
+						"ServiceComponent"
+						"RENAME"
+						"com\\sas\\framework\\expojo"
+						"Describe here"
+						"h"
+						"java"
+						0000 
+						""
+						01 0001 0000 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 355cf046 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 39fd904b 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Calls authenticateCredentials on each of the  IAuthenticators in the authenticators list until one passes authentication or the list is exhausted. "
+					0000 01 00000000 00 01 00 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 150be0b3 0001 00 00 
+					"IAuxiliaryChallenge"
+					"getAuxiliaryChallengeForRealm"
+					"Returns an IAuxiliaryChallenge for the given realm if available for the realm.
+This should be used to determine if a newly registered account should proceed to registration for the auxiliary challenge.
+This should not be used to determine if, after a user passes first factor authentication (eg., password), that they be challenged with the auxiliary authentication challenge."
+					0000 01 00000000 00 01 00 00 0003 
+					"IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0d1c804c 0001 00 00 
+					"IAuxiliaryChallenge"
+					"userRequiresAuxiliaryChallenge"
+					"While an IAuxiliaryChallenge may be associated with this IAuthenticationService it may not be required in every circumstance (e.g. business rules may be configured to only require an auxiliary authentication challenge in certain cases: e.g. user has logged in a device that they have never logged in from before - i.e. the siteVisitorId will not have been encountered for this user before).
+This method will only return non null if the user is required to perform a challenge for an auxiliary factor of authentication (e.g. enter a security code sent via email or an SMS)."
+					0000 01 00000000 00 01 00 00 0003 
+					"IUser user, String siteVisitorId, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 05612089 0001 01 00 
+					"IAuthenticationService"
+					"get"
+					"Retrieves the expojo component from the ExpojoContext."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 04936047 /UOID/ 02 1bcb704e /UOID/ 02 236e404d 
+		/{ class CClass/ 
+			01 000b 091d704f /Location/ 00000686 0000026c 00000b5e 00000438 
+			{
+			}
+			/UOID/ 02 2003b000 00 37513d71 
+			"AbstractExpojoAuthenticationConfig"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"Configuration of authentication under expojo."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0001 00 00 0000 0000 0000 00 
+			{
+			}
+			{
+				/{ class Data/ 
+					01 000d 1cc8c066 0003 01 00 
+					"AbstractExpojoAuthenticationConfig"
+					"self"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 250e4057 0001 00 00 
+					"no type"
+					"Constructor"
+					"Assigns 'self'."
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 08e93056 0001 01 00 
+					"AbstractExpojoAuthenticationConfig"
+					"get"
+					"Returns self"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 23460064 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Calls authenticateCredentials on each of the  IAuthenticators in the authenticators list until one passes authentication or the list is exhausted. "
+					0000 01 00000000 00 01 01 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 233d6065 0001 00 00 
+					"IAuxiliaryChallenge"
+					"userRequiresAuxiliaryChallenge"
+					"While an IAuxiliaryChallenge may be associated with this IAuthenticationService it may not be required in every circumstance (e.g. business rules may be configured to only require an auxiliary authentication challenge in certain cases: e.g. user has logged in a device that they have never logged in from before i.e. a siteVisitorId not previously encountered for this user).
+This method will only return non null if the user is required to perform a challenge for an auxiliary factor of authentication (e.g. enter a security code sent via email or an SMS)."
+					0000 01 00000000 00 01 01 00 0003 
+					"IUser user, String siteVisitorId, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 19bda0b4 0001 00 00 
+					"IAuxiliaryChallenge"
+					"getAuxiliaryChallenge"
+					"Returns the auxiliary challenge if there is one or null if no auxiliary challenge is available to be presented to the user."
+					0000 01 00000000 00 01 01 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 2a65505d /Location/ 00000820 000004ba 00000d0c 00000776 
+			{
+			}
+			/UOID/ 02 2003b000 00 375386f9 
+			"ExpojoAuthenticationConfig"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"A simple concrete implementation of ExpojoAuthenticationConfig."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 074c7067 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 091d704f 00 /UOID/ 02 2a65505d 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 25c1405e 0003 00 00 
+					"List<IAuthenticator>"
+					"authenticators"
+					"Collection of authenticators."
+					0000 01 00 7f 01 01 
+					"new ArrayList<IAuthenticator>()"
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 1a5d305f 0003 01 00 
+					"ExpojoAuthenticationConfig"
+					"self"
+					"NoDesc"
+					0000 01 00 7f 01 01 
+					""
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 128ec060 0002 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					""
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 17e68061 0001 01 00 
+					"ExpojoAuthenticationConfig"
+					"get"
+					"Allows basic addition of multiple IAuthenticatorS and an option auxiliary challenge."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 219b5062 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Calls authenticateCredentials on each of the  IAuthenticators in the authenticators list until one passes authentication or the list is exhausted. "
+					0000 01 00000000 00 01 00 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1aca4063 0001 00 00 
+					"void"
+					"addAuthenticator"
+					"Adds a new authenticator to the manager."
+					0000 01 00000000 00 01 00 00 0003 
+					"IAuthenticator iAuthenticator"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3225509c 0001 00 00 
+					"void"
+					"clearAuthenticators"
+					"Clears the list of authenticators."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3a3ac068 0001 00 00 
+					"IAuxiliaryChallenge"
+					"userRequiresAuxiliaryChallenge"
+					"While an IAuxiliaryChallenge may be associated with this IAuthenticationService it may not be required in every circumstance (e.g. business rules may be configured to only require an auxiliary authentication challenge in certain cases: e.g. user has logged in a device that they have never logged in from before i.e. a siteVisitorId not previously encountered for this user).
+This method will only return non null if the user is required to perform a challenge for an auxiliary factor of authentication (e.g. enter a security code sent via email or an SMS)."
+					0000 01 00000000 00 01 00 00 0003 
+					"IUser user, String deviceId, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 14996069 0001 00 00 
+					"void"
+					"setAuxiliaryChallenge"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					"IAuxiliaryChallenge iAuxiliaryChallenge"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1505d06a 0001 00 00 
+					"IAuxiliaryChallenge"
+					"getAuxiliaryChallenge"
+					"Returns the auxiliary challenge if there is one or null if no auxiliary challenge is available to be presented to the user."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/UOID/ 02 074c7067 
+		/{ class AssociationChain/ 
+			01 0069 2217506b 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 3227806c 00000528 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 3203a06d ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 3227806c 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 258fd06e 00000370 
+					{
+					}
+					01 0000 01 01 0002 0001 01 
+					"auxiliaryChallenge"
+					/{ class RoleText/ 
+						01 0071 3618e06f 00000028 00000021 00000230 00000062 
+						{
+						}
+						""
+						0925 0001 65767265 /UOID/ 02 258fd06e 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 3203a06d /UOID/ 02 3618e06f 
+			}
+			0004 /Bend coords/ 00000622 00000532 00000622 0000037a 
+			/NullObj/ 00 /UOID/ 02 14e7b023 /UOID/ 02 2a65505d 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 1fa11070 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 19223071 0000069a 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 13546072 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 003b6567 /UOID/ 02 19223071 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 262ee073 000004ba 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 26f9f074 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 79726169 /UOID/ 02 262ee073 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 13546072 /UOID/ 02 26f9f074 
+			}
+			0003 /Bend coords/ 000006a4 000004c4 
+			/NullObj/ 00 /UOID/ 02 0e562010 /UOID/ 02 091d704f 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 0f609075 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 019bd076 000006f4 
+					{
+					}
+					00 0002 00 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 36622077 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 019bd076 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 26ff5078 80000000 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 38754079 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 6369746e /UOID/ 02 26ff5078 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 36622077 /UOID/ 02 38754079 
+			}
+			0003 /Bend coords/ 000006fe 000006ae 
+			/NullObj/ 00 /UOID/ 02 2b6cd008 /UOID/ 02 091d704f 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 3448207a 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 2025807b 00000280 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 2f38f07c ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 2025807b 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3e9e507d 00000280 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 3a15207e 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 3e9e507d 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 2f38f07c /UOID/ 02 3a15207e 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1d76900a /UOID/ 02 091d704f 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 0e95a07f 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 1e261080 000001fe 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 22e5d081 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 003b6567 /UOID/ 02 1e261080 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3ed9f082 000002f8 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 02b94083 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 3ed9f082 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 22e5d081 /UOID/ 02 02b94083 
+			}
+			0004 /Bend coords/ 00000622 00000208 00000622 00000302 
+			/NullObj/ 00 /UOID/ 02 14e7b023 /UOID/ 02 355cf046 
+		/} class AssociationChain/ 
+		/{ class AssociationChain/ 
+			01 0069 27843084 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 355f9085 00000334 
+					{
+					}
+					00 0002 00 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 05c4e086 ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 355f9085 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 1fbfc087 00000334 
+					{
+					}
+					01 0002 01 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 0286a088 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 1fbfc087 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 05c4e086 /UOID/ 02 0286a088 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 14e7b023 /UOID/ 02 091d704f 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 3d4e7090 /Location/ 00000474 00000578 00000514 000005dc 
+			{
+			}
+			/UOID/ 02 2003b000 00 37534a08 
+			"Ex"
+			"RENAME"
+			"com\\sas\\framework\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 3f93a096 /Location/ 00000014 00000802 00000320 00000956 
+			{
+			}
+			/UOID/ 02 2003b000 00 375028fe 
+			"SimpleAuthenticator"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"A very simple authenticator - not for production use."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 36dc2097 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 2b6cd008 00 /UOID/ 02 3f93a096 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 0a6f3098 0003 00 00 
+					"boolean"
+					"noPasswordCheck"
+					"Set to true if password should be ignored. This might be the case if operating in some kind of demonstration mode where we don't want to force users to enter a password."
+					0000 01 00 7f 01 01 
+					"false"
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class Function/ 
+					01 0010 39327099 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Finds a user with the given credentials (username and password and optionally realm) and returns it. This is called to authenticate a user in the system.
+If authentication failed null will be retuned otherwise a User object will be returned.
+If realm is not null then the first matching attempt will occur on all OrgRoleUser that reference an OrgRoleInst for the give OrgUnit (IRealm)."
+					0000 01 00000000 00 01 00 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3f9d609a 0001 00 00 
+					"boolean"
+					"getNoPasswordCheck"
+					"Returns noPasswordCheck"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 079e809b 0001 00 00 
+					"void"
+					"setNoPasswordCheck"
+					"Sets noPasswordCheck"
+					0000 01 00000000 00 01 00 00 0003 
+					"boolean noPasswordCheck"
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 26a630a0 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/UOID/ 02 36dc2097 
+		/{ class CClass/ 
+			01 000b 2475809d /Location/ 000003de 0000085c 000006d6 000008fc 
+			{
+			}
+			/UOID/ 02 2003b000 00 375265dc 
+			"AnonymousAuthenticator"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"A non production authenticator that always passes every authentication - it does not check username or password.
+
+Regardless of the username or password entered it always returns the \"anonymous\" user.
+
+This is for TESTING purposes only and should NEVER be used in a production environment."
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 3d9f209e 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 2b6cd008 00 /UOID/ 02 2475809d 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+			}
+			{
+				/{ class Function/ 
+					01 0010 329ee09f 0001 00 00 
+					"IUser"
+					"authenticateCredentials"
+					"Finds a user with the given credentials (username and password and optionally realm) and returns it. This is called to authenticate a user in the system.
+If authentication failed null will be retuned otherwise a User object will be returned.
+If realm is not null then the first matching attempt will occur on all OrgRoleUser that reference an OrgRoleInst for the give OrgUnit (IRealm)."
+					0000 01 00000000 00 01 00 00 0003 
+					"String username, String password, boolean digested, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 04bec0a1 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/UOID/ 02 3d9f209e 
+		/{ class AssociationChain/ 
+			01 0069 0c2000a8 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 04fa90a9 000004a6 
+					{
+					}
+					00 0002 00 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 1c8750aa 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 04fa90a9 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3692e0ab 000004a6 
+					{
+					}
+					01 0002 01 01 0002 0000 02 
+					""
+					/{ class RoleText/ 
+						01 0071 013760ac 00000000 00000016 00000014 0000001b 
+						{
+						}
+						""
+						0925 0001 34313032 /UOID/ 02 3692e0ab 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 1c8750aa /UOID/ 02 013760ac 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 3d4e7090 /UOID/ 02 2b6cd008 
+		/} class AssociationChain/ 
+		/{ class CClass/ 
+			01 000b 0332a0ad /Location/ 00000618 00000744 000007bc 000007a8 
+			{
+			}
+			/UOID/ 02 2003b000 00 3760d9e1 
+			"UserRepository"
+			"RENAME"
+			"com\\sas\\framework\\iam\\user\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 3bfb60ae 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0a3380af 000006e0 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 260ef0b0 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 006f6e20 /UOID/ 02 0a3380af 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 08d5d0b1 000006ea 
+					{
+					}
+					01 0002 01 01 0002 0000 00 
+					""
+					/{ class RoleText/ 
+						01 0071 01a6e0b2 00000000 fffffff9 00000014 fffffffe 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 08d5d0b1 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 260ef0b0 /UOID/ 02 01a6e0b2 
+			}
+			0003 /Bend coords/ 000006f4 000006ea 
+			/NullObj/ 00 /UOID/ 02 0332a0ad /UOID/ 02 2b6cd008 
+		/} class AssociationChain/ 
+	}
+	007b 
+	"com\\sas\\framework\\iam\\authentication\\expojo"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 2b3aa002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

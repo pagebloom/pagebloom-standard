@@ -1,0 +1,504 @@
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000030 01 0001 
+/{ class ClassDiagram/ 
+	01 3afc 11edb000 
+	"Session"
+	""
+	""
+	"Chris Colman"
+	{
+		/{ class CClass/ 
+			01 000b 125e0003 /Location/ 0000001e 0000001e 000001ea 00000082 
+			{
+			}
+			/UOID/ 02 11edb000 00 372d5517 
+			"IWexpojoSession"
+			"RENAME"
+			"com\\expojo\\app\\wexpojo\\ui\\session"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class CClass/ 
+			01 000b 2070e004 /Location/ 0000000a 00000168 000004a6 00000550 
+			{
+			}
+			/UOID/ 02 11edb000 00 372fecd0 
+			"PagebloomStdSession"
+			"RENAME"
+			"com\\sas\\platform\\pagebloom\\std\\session"
+			"The session used by pagebloom standard."
+			"h"
+			"java"
+			0000 
+			""
+			00 0001 0000 00 00 0000 0000 0000 00 
+			{
+				/{ class BaseClassRef/ 
+					01 006b 35293005 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0000 /UOID/ 02 125e0003 00 /UOID/ 02 2070e004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+				/{ class BaseClassRef/ 
+					01 006b 35b7b007 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0001 
+					/{ class CClass/ 
+						01 000b 38d49008 /Location/ 0000029e 0000001e 00000406 00000082 
+						{
+						}
+						/UOID/ 02 11edb000 00 372d3ae3 
+						"WebSession"
+						"RENAME"
+						"org\\apache\\wicket\\protocol\\http"
+						"Describe here"
+						"h"
+						"java"
+						0000 
+						""
+						00 0001 0000 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 2070e004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+				/{ class BaseClassRef/ 
+					01 006b 3f6a501c 
+					{
+					}
+					0002 /Bend coords/ 
+					/NullObj/ 00 0001 0002 
+					/{ class CClass/ 
+						01 000b 15f7401d /Location/ 000004ba 0000001e 000006d6 00000082 
+						{
+						}
+						/UOID/ 02 11edb000 00 37785f39 
+						"AbstractUserSession"
+						"RENAME"
+						"com\\sas\\framework\\iam\\user"
+						"Describe here"
+						"h"
+						"java"
+						0002 
+						""
+						01 0001 0001 01 00 0004 0000 0000 00 
+						{
+						}
+						{
+						}
+						{
+						}
+						/NullObj/ 00 
+						{
+						}
+					/} class CClass/ 
+					00 /UOID/ 02 2070e004 
+					""
+					00 7f 
+				/} class BaseClassRef/ 
+			}
+			{
+				/{ class Data/ 
+					01 000d 32cd8023 0003 00 00 
+					"boolean"
+					"unsatisfiedAuxiliaryChallenge"
+					"Set to true if authentication service mandated an auxiliary challenge.
+Set to false if/when that challenge becomes satisfied."
+					0000 01 00 7f 01 01 
+					"false"
+					/NullObj/ 00 
+				/} class Data/ 
+			}
+			{
+				/{ class FConstructor/ 
+					01 000c 387b0009 0001 00 00 
+					"no type"
+					"Constructor"
+					"Constructs the object"
+					0000 01 00000000 00 00 00 00 0000 
+					"Request request, Response response"
+					0000 
+					""
+				/} class FConstructor/ 
+				/{ class Function/ 
+					01 0010 127f4006 0001 00 00 
+					"IUser"
+					"getUser"
+					"Returns the authenticated user associated with this session.
+
+This will return null unless all required authentication factors have been processed and succeeded.
+
+NOTE: it is possible that an implementation may have a reference to the IUser but should NOT return it due to not all authentication factor processes being completed successfully."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 10f2700a 0001 00 00 
+					"void"
+					"setUser"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					"IUser iUser"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0ef2801e 0001 00 00 
+					"IEntity"
+					"getEntity"
+					"Returns the entity."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3546401f 0001 00 00 
+					"void"
+					"setEntity"
+					"Sets the entity."
+					0000 01 00000000 00 01 00 00 0003 
+					"IEntity entity"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2572a013 0001 00 00 
+					"String"
+					"getSiteVisitorId"
+					"Returns a unique identifier for the visitor visiting this website.
+This value is typically stored as a cookie in the user's browser.
+A single user may access the website from multiple browsers across a range of different PCs, Laptops and handheld devices. There will be a separate, unique site visitor Id for each of these browsers."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 371a2012 0001 01 00 
+					"PagebloomStdSession"
+					"get"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 30df6015 0001 00 00 
+					"IUser"
+					"authenticate"
+					"Attempts to authenticate with the given username and password.
+Returns an implementation of IUser if successful or null if not.
+realm is an optional parameter that may be null. If not null then the authentication process is widened to consider a match for username and password in any org specific roles within the realm.
+Note: the realm parameter is not used for pagebloom standard. It is currently a pagebloom enterprise feature only."
+					0000 01 00000000 00 01 00 00 0003 
+					"String username, String password, boolean enableAutoSignIn, IRealm realm"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 32674024 0001 00 00 
+					"boolean"
+					"hasUnsatisfiedAuxiliaryChallenge"
+					"Returns unsatisfiedAuxiliaryChallenge"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 1a5fd025 0001 00 00 
+					"void"
+					"setUnsatisfiedAuxiliaryChallenge"
+					"Sets unsatisfiedAuxiliaryChallenge"
+					0000 01 00000000 00 01 00 00 0003 
+					"boolean unsatisfiedAuxiliaryChallenge"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 10d7e026 0001 00 00 
+					"void"
+					"processGenericPageParameters"
+					"Allows a general app wide processing of certain generic page parameters if required. Any page specific parameters will likely not be handled by this method."
+					0000 01 00000000 00 01 00 00 0003 
+					"WebPage webPage, PageParameters pageParameters"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 333d8027 0001 00 00 
+					"void"
+					"setWorkflowOrchestrator"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					"IWorkflowOrchestrator iWorkflowOrchestrator"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 3c48c028 0001 00 00 
+					"IWorkflowOrchestrator"
+					"getWorkflowOrchestrator"
+					"Describe here"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 2f3fe02f 0001 00 00 
+					"void"
+					"detach"
+					"Detaches the session."
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+			}
+			/NullObj/ 00 
+			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 30d56014 
+				/} class LoggerCodeInjector/ 
+			}
+		/} class CClass/ 
+		/UOID/ 02 35293005 /UOID/ 02 38d49008 /UOID/ 02 35b7b007 
+		/{ class CClass/ 
+			01 000b 259ef00b /Location/ 0000058c 000001b8 00000640 0000021c 
+			{
+			}
+			/UOID/ 02 11edb000 00 372ea33c 
+			"IUser"
+			"RENAME"
+			"com\\sas\\framework\\iam\\user"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 13d8700c 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 0aa1100d 000001e0 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 0fb8400e 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00005c00 /UOID/ 02 0aa1100d 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3b1a900f 000001e0 
+					{
+					}
+					01 0000 01 01 0002 0001 03 
+					"user"
+					/{ class RoleText/ 
+						01 0071 3b021010 ffffff3e ffffffc7 00000008 00000008 
+						{
+						}
+						""
+						0925 0001 00000000 /UOID/ 02 3b1a900f 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 0fb8400e /UOID/ 02 3b021010 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 259ef00b /UOID/ 02 2070e004 
+		/} class AssociationChain/ 
+		/{ class Annotation/ 
+			01 0064 08557011 /Location/ 000006b8 00000154 000008bf 000002a2 
+			{
+			}
+			"Any model objects referenced from a session scoped object need to be non caching IModel objects (NonCachingWicketModelRef).
+As they are non caching they won't need to be IDetachable and therefore won't need to be explicitly detached.
+"
+			0810 0002 2e393130 
+		/} class Annotation/ 
+		/{ class CClass/ 
+			01 000b 1bccf016 /Location/ 0000058c 000002c6 0000085c 0000032a 
+			{
+			}
+			/UOID/ 02 11edb000 00 3751a794 
+			"ExpojoAuthenticationService"
+			"RENAME"
+			"com\\sas\\framework\\iam\\authentication\\expojo"
+			"Describe here"
+			"h"
+			"java"
+			0000 
+			""
+			01 0001 0000 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 0dce8017 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 1f061018 000002ee 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 3a872019 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 616a5c6e /UOID/ 02 1f061018 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 3153d01a 000002ee 
+					{
+					}
+					01 0002 01 01 0002 0000 03 
+					""
+					/{ class RoleText/ 
+						01 0071 2410f01b ffffffeb 00000003 ffffffff 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 3153d01a 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 3a872019 /UOID/ 02 2410f01b 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 1bccf016 /UOID/ 02 2070e004 
+		/} class AssociationChain/ 
+		/UOID/ 02 15f7401d /UOID/ 02 3f6a501c 
+		/{ class CClass/ 
+			01 000b 3ef6b029 /Location/ 0000079e 000003ac 000009ce 00000410 
+			{
+			}
+			/UOID/ 02 11edb000 00 37b56eae 
+			"IWorkflowOrchestrator"
+			"RENAME"
+			"com\\sas\\app\\wexpojo\\ui\\session"
+			"Describe here"
+			"h"
+			"java"
+			0002 
+			""
+			01 0001 0001 01 00 0004 0000 0000 00 
+			{
+			}
+			{
+			}
+			{
+			}
+			/NullObj/ 00 
+			{
+			}
+		/} class CClass/ 
+		/{ class AssociationChain/ 
+			01 0069 3c01502a 
+			{
+				/{ class CardinalityAnchor/ 
+					01 006c 20d7502b 000003ca 
+					{
+					}
+					00 0002 00 01 0002 0000 01 
+					""
+					/{ class RoleText/ 
+						01 0071 34e9802c 00000014 00000003 00000028 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 20d7502b 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/{ class CardinalityAnchor/ 
+					01 006c 2dc3b02d 000003ca 
+					{
+					}
+					01 0000 01 01 0002 0001 03 
+					"workflowOrchestrator"
+					/{ class RoleText/ 
+						01 0071 0462e02e fffffdba ffffffc7 00000006 00000008 
+						{
+						}
+						""
+						0925 0001 00000003 /UOID/ 02 2dc3b02d 
+					/} class RoleText/ 
+					00 7f 01 01 01 01 /NullObj/ 00 
+				/} class CardinalityAnchor/ 
+				/UOID/ 02 34e9802c /UOID/ 02 0462e02e 
+			}
+			0002 /Bend coords/ 
+			/NullObj/ 00 /UOID/ 02 3ef6b029 /UOID/ 02 2070e004 
+		/} class AssociationChain/ 
+	}
+	006b 
+	"com\\sas\\app\\wexpojo\\session"
+	0000 
+	/{ class OODBGenerator/ 
+		01 046d 071c0002 
+		""
+		0000 00000000 00000000 00 00 01 00 00 01 
+		"VERSION"
+		/NullObj/ 00 
+	/} class OODBGenerator/ 
+/} class ClassDiagram/ 

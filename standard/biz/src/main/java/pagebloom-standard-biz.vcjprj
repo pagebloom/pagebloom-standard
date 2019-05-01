@@ -1,0 +1,48 @@
+00d0def1 7ffe 0000 00 00000002 00000001 00000002 0007 00000101 00000000 00000009 01 
+/{ class ModelRepository/ 
+	01 2134 2ee06000 
+	{
+	}
+	"Chris Colman"
+	"Step Ahead Software"
+	"pagebloom standard biz"
+	"(c) 2007, 2019. Step Ahead Software Pty Ltd.
+All rights reserved.
+Distribution of this software in source or binary format is forbidden without an explicit license from Step Ahead Software Pty Ltd"
+	00 01 00 
+	"h"
+	"java"
+	0000012c 000000c8 
+	""
+	""
+	""
+	{
+		/{ class ClassDiagramRef/ 
+			01 2135 29c3d006 
+			"DEFAULT"
+			"Expojo Foundation and Context Factory"
+			/UOID/ 02 2ee06000 
+			"foundationAndContextFactory.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 2a8f4007 
+			"DEFAULT"
+			"Module"
+			/UOID/ 02 2ee06000 
+			"Module.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 308a0008 
+			"DEFAULT"
+			"Environment"
+			/UOID/ 02 2ee06000 
+			"Environment.vcm"
+		/} class ClassDiagramRef/ 
+	}
+	/{ class MakeRunOptions/ 
+		01 048e 2ce1d002 0004 0000 0000 01 
+		"ant compile"
+		"ant run"
+		01 00 
+	/} class MakeRunOptions/ 
+/} class ModelRepository/ 

@@ -1,0 +1,82 @@
+00d0def1 7ffe 0000 00 00000002 00000001 00000002 0007 00000101 00000000 0000000b 01 
+/{ class ModelRepository/ 
+	01 2134 2c6bc000 
+	{
+	}
+	"Chris Colman"
+	"Step Ahead Software"
+	"WexPOJO - Wicket + exPOJO application core"
+	"(c) 2008,2019. Step Ahead Software Pty Ltd. All rights reserved.
+Usage is governed by the terms of the Apache 2 License."
+	00 01 00 
+	"h"
+	"java"
+	0000012c 000000c8 
+	"com\\sas\\app\\wexpojo"
+	""
+	""
+	{
+		/{ class ClassDiagramRef/ 
+			01 2135 3e44e003 
+			"DEFAULT"
+			"App Core"
+			/UOID/ 02 2c6bc000 
+			"WexPOJO - App Core.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 22219004 
+			"DEFAULT"
+			"Session"
+			/UOID/ 02 2c6bc000 
+			"Session.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 0987c005 
+			"DEFAULT"
+			"Account"
+			/UOID/ 02 2c6bc000 
+			"Account.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 0ecf7006 
+			"DEFAULT"
+			"Authenticate"
+			/UOID/ 02 2c6bc000 
+			"Authenticate.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 1eff5007 
+			"DEFAULT"
+			"Landing"
+			/UOID/ 02 2c6bc000 
+			"Landing.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 0b0c5008 
+			"DEFAULT"
+			"Pages"
+			/UOID/ 02 2c6bc000 
+			"standardSomething.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 0b48e009 
+			"DEFAULT"
+			"Error page and [panel]"
+			/UOID/ 02 2c6bc000 
+			"Error.vcm"
+		/} class ClassDiagramRef/ 
+		/{ class ClassDiagramRef/ 
+			01 2135 3ea7800a 
+			"DEFAULT"
+			"Dashboard"
+			/UOID/ 02 2c6bc000 
+			"Dashboard.vcm"
+		/} class ClassDiagramRef/ 
+	}
+	/{ class MakeRunOptions/ 
+		01 048e 086b8001 0004 0000 0000 01 
+		"ant compile"
+		"ant run"
+		01 00 
+	/} class MakeRunOptions/ 
+/} class ModelRepository/ 
