@@ -85,7 +85,7 @@ private static final Logger logger = LogManager.getLogger(PagebloomStdExpojoFoun
  */
 public Environment newEnvironment()
 {
-	new Environment();
+	return new Environment();
 }
 
 /**
@@ -142,7 +142,14 @@ protected void readConfigParameters(ServletContext servletContext)
 	}
 
 	environment.setAppHost(appHost);
-	
+
+	String appSubdomain = servletContext.getInitParameter("app.subdomain");
+	if ( appSubdomain != null )
+	{
+		environment.setAppSubdomain(appSubdomain);
+	}
+
+
 	// if empty then port 80 is assumed
 	String appPort = servletContext.getInitParameter("app.port");
 

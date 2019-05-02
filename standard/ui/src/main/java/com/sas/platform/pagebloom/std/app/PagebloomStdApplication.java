@@ -94,13 +94,7 @@ public String getBaseUrlOfWebsite(IWebsite website)
 {
 	Environment env = Environment.get();
 	
-	String protocol = env.getAppSecuredBySsl() ? "https://" : "http://";
-	String baseUrl = protocol + website.getHostName();
-	if (env.getAppPort() != null)
-		baseUrl += ":" + env.getAppPort();
-
-	return baseUrl;
-	
+	return env.getBaseUrl(website.getHostName());
 }
 
 /**

@@ -76,6 +76,13 @@ private InstanceType instanceType;
 
 
 /**
+ * The context path via which this application is accessed on the host server.
+ */
+private String contextPath = "";
+
+
+
+/**
  * Hostname of app.
  */
 private String appHost;
@@ -111,6 +118,22 @@ private boolean appSecuredBySsl = false;
 // -[Methods]-
 
 /**
+ * Sets contextPath
+ */
+public void setContextPath(String contextPath)
+{
+    this.contextPath = contextPath;
+}
+
+/**
+ * Returns contextPath
+ */
+public String getContextPath()
+{
+    return contextPath;
+}
+
+/**
  * Sets appSubdomain
  */
 public void setAppSubdomain(String appSubdomain)
@@ -126,9 +149,6 @@ public String getAppSubdomain()
     return appSubdomain;
 }
 
-
-
-
 /**
  * Returns a string like:
  * 
@@ -143,7 +163,7 @@ public String getBaseUrl(String hostname)
 	if (appPort != null)
 		protocolAndHostname += ":" + appPort;
 
-	return protocolAndHostname;
+	return protocolAndHostname + getContextPath();
 }
 
 /**

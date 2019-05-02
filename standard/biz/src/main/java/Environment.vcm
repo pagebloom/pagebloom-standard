@@ -1,4 +1,4 @@
-7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000001f 01 0001 
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000022 01 0001 
 /{ class ClassDiagram/ 
 	01 3afc 29a99000 
 	"Environment"
@@ -7,7 +7,7 @@
 	""
 	{
 		/{ class CClass/ 
-			01 000b 3bc02003 /Location/ 0000001e 0000001e 0000032a 00000622 
+			01 000b 3bc02003 /Location/ 0000001e 0000001e 0000032a 000006d6 
 			{
 			}
 			/UOID/ 02 29a99000 00 378d772d 
@@ -49,6 +49,15 @@ Configuration of an Environment may take place via a properties files, context.x
 					"Instance type of this environment."
 					0000 01 00 7f 01 01 
 					""
+					/NullObj/ 00 
+				/} class Data/ 
+				/{ class Data/ 
+					01 000d 3ef8301f 0003 00 00 
+					"String"
+					"contextPath"
+					"The context path via which this application is accessed on the host server."
+					0000 01 00 7f 01 01 
+					"\"\""
 					/NullObj/ 00 
 				/} class Data/ 
 				/{ class Data/ 
@@ -182,6 +191,26 @@ So full hostname is sports.pagebloom.com
 					"Sets appSecuredBySsl"
 					0000 01 00000000 00 01 00 00 0003 
 					"boolean appSecuredBySsl"
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 112b1020 0001 00 00 
+					"String"
+					"getContextPath"
+					"Returns contextPath"
+					0000 01 00000000 00 01 00 00 0003 
+					""
+					0000 
+					""
+				/} class Function/ 
+				/{ class Function/ 
+					01 0010 07e6d021 0001 00 00 
+					"void"
+					"setContextPath"
+					"Sets contextPath"
+					0000 01 00000000 00 01 00 00 0003 
+					"String contextPath"
 					0000 
 					""
 				/} class Function/ 

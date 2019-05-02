@@ -100,6 +100,8 @@ protected void readConfigParameters(ServletContext servletContext)
 {
 	Environment environment = Environment.get();
 
+	environment.setContextPath(servletContext.getContextPath());
+
 	Environment.InstanceType instanceType;
 
 	String instanceTypeStr = servletContext.getInitParameter("instance.type");
