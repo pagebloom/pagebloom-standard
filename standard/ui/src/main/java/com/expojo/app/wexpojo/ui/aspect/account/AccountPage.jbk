@@ -20,6 +20,14 @@ import com.expojo.app.wexpojo.ui.aspect.WebsitePage;
 
 // -[KeepBeforeClass]-
 
+import com.expojo.app.wexpojo.ui.aspect.error.ErrorPage;
+import com.expojo.app.wexpojo.ui.session.IWexpojoSession;
+import com.sas.app.wexpojo.biz.website.IWebsite;
+import com.sas.framework.iam.user.IUser;
+import org.apache.wicket.RestartResponseException;
+import org.apache.wicket.core.request.handler.PageProvider;
+import org.apache.wicket.core.request.handler.RenderPageRequestHandler;
+import org.apache.wicket.protocol.http.WebSession;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 // -[Class]-
@@ -59,13 +67,18 @@ protected void onInitialize()
 	IWebsite website = getWebsite();
 
 	// Register requires a valid IUser
-	IWexpojoSession wexpojoSession = (IWexpojoSession)WebSession.get();
+	IWexpojoSession wexpojoSession = (IWexpojoSession) WebSession.get();
 	IUser iUser = wexpojoSession.getUser();
 
 	if (iUser != null)
-		redirectToAccessDeniedPage("A user is currently logged in - to register a new user please log out first and try again");
+	{
+		String errMsg = "A user is currently logged in - to register a new user please log out first and try again";
+		error(errMsg);
+		logger.error(errMsg);
+		throw new RestartResponseException(new PageProvider(ErrorPage.class), RenderPageRequestHandler.RedirectPolicy.NEVER_REDIRECT);
+	}
 	else
-		body.add(new PagebloomRegisterPanel("contentPanel", website);
+		body.add(new PagebloomRegisterPanel("contentPanel"));
 }
 
 

@@ -1,4 +1,4 @@
-7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000034 01 0001 
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 00000035 01 0001 
 /{ class ClassDiagram/ 
 	01 3afc 0c3b8000 
 	"Account"
@@ -91,6 +91,9 @@
 			}
 			/NullObj/ 00 
 			{
+				/{ class LoggerCodeInjector/ 
+					01 371f 1d5b0034 
+				/} class LoggerCodeInjector/ 
 			}
 		/} class CClass/ 
 		/UOID/ 02 1d88b005 

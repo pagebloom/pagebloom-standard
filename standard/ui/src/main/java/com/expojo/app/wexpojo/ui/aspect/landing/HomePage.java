@@ -46,13 +46,21 @@ class HomePage extends WebsitePage
 // -[Methods]-
 
 /**
+ * Creates and returns a new WelcomePanel or derivative class.
+ */
+public WelcomePanel createWelcomePanel(String id)
+{
+	return new WelcomePanel(id);
+}
+
+/**
  * Describe here
  */
 public void onInitialize()
 {
 	super.onInitialize();
 	
-	body.add(new WelcomePanel("welcomePanel"));
+	body.add(createWelcomePanel("welcomePanel"));
 }
 
 

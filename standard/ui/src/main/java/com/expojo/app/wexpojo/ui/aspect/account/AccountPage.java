@@ -17,12 +17,22 @@ package com.expojo.app.wexpojo.ui.aspect.account;
 import java.lang.*;
 import com.expojo.app.wexpojo.ui.aspect.WebsitePage;
 
+// [Added by Code Injection Wizard: Log4J Logging Support]
+// Do not edit code injected by the wizard directly in the source file as
+// as it will be overwritten during subsequent updates. 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 
 // -[KeepBeforeClass]-
 
+import com.expojo.app.wexpojo.ui.aspect.error.ErrorPage;
 import com.expojo.app.wexpojo.ui.session.IWexpojoSession;
 import com.sas.app.wexpojo.biz.website.IWebsite;
 import com.sas.framework.iam.user.IUser;
+import org.apache.wicket.RestartResponseException;
+import org.apache.wicket.core.request.handler.PageProvider;
+import org.apache.wicket.core.request.handler.RenderPageRequestHandler;
 import org.apache.wicket.protocol.http.WebSession;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
@@ -50,6 +60,11 @@ public static final int acStandard = 0;
 
 // -[Fields]-
 
+// [Added by Code Injection Wizard: Log4J Logging Support]
+// Do not edit code injected by the wizard directly in the source file as
+// as it will be overwritten during subsequent updates. 
+private static final Logger logger = LogManager.getLogger(AccountPage.class);
+
 
 // -[Methods]-
 
@@ -67,7 +82,12 @@ protected void onInitialize()
 	IUser iUser = wexpojoSession.getUser();
 
 	if (iUser != null)
-		error("A user is currently logged in - to register a new user please log out first and try again");
+	{
+		String errMsg = "A user is currently logged in - to register a new user please log out first and try again";
+		error(errMsg);
+		logger.error(errMsg);
+		throw new RestartResponseException(new PageProvider(ErrorPage.class), RenderPageRequestHandler.RedirectPolicy.NEVER_REDIRECT);
+	}
 	else
 		body.add(new PagebloomRegisterPanel("contentPanel"));
 }

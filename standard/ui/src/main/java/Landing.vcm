@@ -1,4 +1,4 @@
-7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000000d 01 0001 
+7abbfab0 7ffe 0000 00 00000005 00000001 00000005 0241 00000101 00000000 0000000e 01 0001 
 /{ class ClassDiagram/ 
 	01 3afc 0afbe000 
 	"Landing"
@@ -7,7 +7,7 @@
 	"Chris Colman"
 	{
 		/{ class CClass/ 
-			01 000b 1a02b003 /Location/ 0000001e 0000015e 000001c2 00000276 
+			01 000b 1a02b003 /Location/ 0000001e 0000014a 000003ca 0000029e 
 			{
 			}
 			/UOID/ 02 0afbe000 00 372941ee 
@@ -28,7 +28,7 @@
 					0002 /Bend coords/ 
 					/NullObj/ 00 0001 0000 
 					/{ class CClass/ 
-						01 000b 2aaf1007 /Location/ 0000003c 0000001e 000001a4 00000082 
+						01 000b 2aaf1007 /Location/ 00000140 00000028 000002a8 0000008c 
 						{
 						}
 						/UOID/ 02 0afbe000 00 372ab967 
@@ -89,6 +89,16 @@
 					0000 
 					""
 				/} class Function/ 
+				/{ class Function/ 
+					01 0010 0ecd900d 0001 00 00 
+					"WelcomePanel"
+					"createWelcomePanel"
+					"Creates and returns a new WelcomePanel or derivative class."
+					0000 01 00000000 00 01 00 00 0003 
+					"String id"
+					0000 
+					""
+				/} class Function/ 
 			}
 			/NullObj/ 00 
 			{
@@ -96,7 +106,7 @@
 		/} class CClass/ 
 		/UOID/ 02 2aaf1007 /UOID/ 02 340e3006 
 		/{ class CClass/ 
-			01 000b 192e7008 /Location/ 000002bc 0000001e 00000438 00000082 
+			01 000b 192e7008 /Location/ 000004ec 0000001e 00000668 00000082 
 			{
 			}
 			/UOID/ 02 0afbe000 00 37282799 
@@ -120,7 +130,7 @@
 			}
 		/} class CClass/ 
 		/{ class CClass/ 
-			01 000b 0a601009 /Location/ 000002a8 0000015e 0000044c 000001fe 
+			01 000b 0a601009 /Location/ 000004d8 0000014a 0000067c 000001ea 
 			{
 			}
 			/UOID/ 02 0afbe000 00 372a7e6b 
