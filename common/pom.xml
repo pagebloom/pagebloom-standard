@@ -24,7 +24,7 @@
 	<parent>
 		<groupId>com.pagebloom</groupId>
 		<artifactId>pagebloom-parent</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.7-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.pagebloom.common</groupId>
@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>com.expojo.ui</groupId>
 			<artifactId>expojo-ui-wexpojo</artifactId>
-			<version>3.2.1</version>
+			<version>3.7.1</version>
 		</dependency>
 
 		<!--  WICKET DEPENDENCIES -->
