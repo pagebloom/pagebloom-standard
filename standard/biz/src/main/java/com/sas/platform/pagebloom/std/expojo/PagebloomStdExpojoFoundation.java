@@ -43,9 +43,10 @@ import org.apache.logging.log4j.LogManager;
 
 
 // -[KeepBeforeClass]-
-import com.sas.framework.iam.module.jdo.IdentityAccessModuleJdo;
 import javax.servlet.ServletContext;
 
+
+import com.sas.framework.iam.module.jdo.IdentityAccessModuleJdo;
 import com.sas.framework.system.Environment;
 
 import com.sas.app.wexpojo.biz.website.IWebsiteBehaviour;
@@ -185,7 +186,22 @@ public void addWebsite(IWebsiteRepository websiteRepository, int id, String name
 {
 	String hostnamePrefix = Environment.get().getHostnamePrefix();
 	
-	Website website = new Website(id, name, subdomain + "." + hostnamePrefix + domainName, behaviour);
+	StringBuilder hostname = new StringBuilder();
+	if (subdomain != null && subdomain.length() > 0)
+	{
+		hostname.append(subdomain);
+		hostname.append(".");
+	}
+	
+	if (hostnamePrefix != null && hostnamePrefix.length() > 0)
+	{
+		// hostnamePrefix will include a trailing .
+		hostname.append(hostnamePrefix);
+	}
+
+	hostname.append(domainName);
+	
+	Website website = new Website(id, name, hostname.toString(), behaviour);
 	website.setTemplateId(templateId);
 	website.setThemeId(theme);
 	
