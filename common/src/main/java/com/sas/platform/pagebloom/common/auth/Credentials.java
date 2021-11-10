@@ -115,7 +115,14 @@ public boolean getAutoLogin()
  */
 public void setPassword(String password)
 {
-    this.password = password;
+	// Wicket's PasswordTextField defaults to "resetPassword=true" which calls setPassword(null) on
+	// the  model object (this object) when the form is detached to prevent the password from
+	// be serialized when the page is serialized - that's good security policy so we should keep it!!
+	// However ... this means we'll lose the password the user entered in the model - it's ok to keep
+	// the password in the model as the password field is marked as transient and so won't be 
+	// serialized anyway
+	if (password != null)
+		this.password = password;
 }
 
 /**
