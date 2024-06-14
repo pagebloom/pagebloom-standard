@@ -17,11 +17,11 @@ package com.expojo.app.wexpojo.ui.aspect.account;
 import java.lang.*;
 import com.expojo.app.wexpojo.ui.aspect.WebsitePanel;
 
-// [Added by Code Injection Wizard: Log4J Logging Support]
+// [Added by Code Injection Wizard: SLF4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as
 // as it will be overwritten during subsequent updates. 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 // -[KeepBeforeClass]-
@@ -91,10 +91,10 @@ protected WebMarkupContainer personalDetailsContainer;
  */
 private boolean confirmEmail;
 
-// [Added by Code Injection Wizard: Log4J Logging Support]
+// [Added by Code Injection Wizard: SLF4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as
 // as it will be overwritten during subsequent updates. 
-private static final Logger logger = LogManager.getLogger(UserSignupForm.class);
+private static final Logger logger = LoggerFactory.getLogger(UserSignupForm.class);
 
 
 // -[Methods]-

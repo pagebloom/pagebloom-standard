@@ -4,7 +4,8 @@
 // -[Copyright]-
 
 /**
- * (c) 2006, 2014 Step Ahead Software Pty Ltd. All rights reserved.
+ * (c) 2008,2019. Step Ahead Software Pty Ltd. All rights reserved.
+ * Usage is governed by the terms of the Apache 2 License.
  * 
  * Source file created and managed by Javelin (TM) Step Ahead Software.
  * To maintain code and model synchronization you may directly edit code in method bodies
@@ -33,7 +34,7 @@ import com.sas.framework.iam.authentication.IAuxiliaryChallenge;
 /**
  * Class Name : AbstractExpojoAuthenticationConfig
  * Diagram    : Authentication Impl
- * Project    : Entity Model Framework
+ * Project    : pagebloom common
  * Type       : abstract
  * Configuration of authentication under expojo.
  * 

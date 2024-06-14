@@ -14,16 +14,24 @@
  */
 package com.expojo.app.wexpojo.ui.aspect.account;
 
-import java.io.IOException;
 import java.lang.*;
 import com.expojo.app.wexpojo.ui.aspect.WebsitePanel;
+
+// [Added by Code Injection Wizard: Log4J Logging Support]
+// Do not edit code injected by the wizard directly in the source file as
+// as it will be overwritten during subsequent updates. 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 // -[KeepBeforeClass]-
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletResponse;
 
 import com.expojo.app.wexpojo.ui.aspect.dashboard.DashboardPage;
+import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxFallbackButton;
@@ -38,8 +46,11 @@ import com.sas.framework.iam.realm.IRealm;
 import com.sas.framework.iam.user.IUser;
 
 import com.sas.platform.pagebloom.common.auth.RegisterCredentials;
+import org.apache.wicket.request.IRequestCycle;
 import org.apache.wicket.request.flow.RedirectToUrlException;
-
+import org.apache.wicket.request.http.WebRequest;
+import org.apache.wicket.request.http.WebResponse;
+import org.apache.wicket.request.http.handler.RedirectRequestHandler;
 
 
 // -[Class]-
@@ -81,6 +92,11 @@ protected RegisterCredentials registerCredentials;
  * The form embedded in the panel.
  */
 protected UserSignupForm formPanel;
+
+// [Added by Code Injection Wizard: Log4J Logging Support]
+// Do not edit code injected by the wizard directly in the source file as
+// as it will be overwritten during subsequent updates. 
+private static final Logger logger = LogManager.getLogger(RegisterPanel.class);
 
 
 
@@ -128,19 +144,29 @@ public void onFormSubmit()
 		String url = auxiliaryChallenge.getRegistrationUrl(getProtocolAndDomain(), user, wexpojoSession.getSiteVisitorId(), realm);
 
 		// Without the SC_SEE_OTHER response parameter encoded parameter values become UN-encoded!
-		//throw new RedirectToUrlException(url, HttpServletResponse.SC_TEMPORARY_REDIRECT);
 
+
+		//throw new RedirectToUrlException(url);  // loses encoding on query parameters
+
+		//throw new RedirectToUrlException(url, HttpServletResponse.SC_TEMPORARY_REDIRECT); fails - wicket doesn't support 307
+
+		// Keeps encoding but gets CORS error if invoked in an AJAX request
+		// The CORS issue is fixed in 7.x or later so we can revert to AJAX form submission when we migrate
+		// up to that version or later
+		throw new RedirectToUrlException(url, HttpServletResponse.SC_SEE_OTHER);
+
+		/*
 		HttpServletResponse response = (HttpServletResponse)getWebResponse().getContainerResponse();
 		try
 		{
-			response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+			//response.setStatus(HttpServletResponse.SC_TEMPORARY_REDIRECT);
 			response.sendRedirect(url);
 		}
 		catch (IOException ioe)
 		{
 			logger.error("Redirect failed", ioe);
 		}
-
+*/
 	}
 	else
 	{
@@ -180,7 +206,6 @@ protected void onInitialize()
 		}
 	};
 
-
 	add(form);
 
 	// Feedback
@@ -191,16 +216,30 @@ protected void onInitialize()
 	form.add(formPanel);
 
 	// Submit button
+	// Can't use AJAX submit here because
+	//
+	// 1. We lose URL query parameter encoding if we use RedirectToUrlException with SC_MOVED_TEMPORARILY
+	//   See ServletWebResponse:
+	//   	sendRedirect(String url) {
+	//   	try {
+	//   		this.redirect = true;
+	//   >>>> 'encode' is actually performing a decode in this line <<<<
+	//   	url = this.encodeRedirectURL(url); this.disableCaching();
+	//
+	// 2. We get CORS errors if we use RedirectToUrlException with SC_SEE_OTHER
+	//   SC_SEE_OTHER was suggested as a solution to the loss of encoding but gives CORS errors if invoked
+	//   via an AJAX call.
+	//
+	// NOTE: Revert to AJAX form submission when migrated to 7.x see https://issues.apache.org/jira/browse/WICKET-6638
+
+/*
 	form.add(new AjaxFallbackButton("submit", form)
 	{
 		@Override
 		public void onSubmit(AjaxRequestTarget target, Form<?> form)
 		{
-			target.add(form.get("feedback"));
-
 			// Call overridable submit handler on the panel
-// handled by non AJAX submit because can't redirect from within an AJAX call???? What? Should be able to
-//			RegisterPanel.this.onFormSubmit();
+			RegisterPanel.this.onFormSubmit();
 		}
 
 		@Override
@@ -209,6 +248,7 @@ protected void onInitialize()
 			target.add(form.get("feedback"));
 		}
 	});
+*/
 }
 
 

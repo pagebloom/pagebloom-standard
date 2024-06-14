@@ -27,11 +27,11 @@ import com.sas.platform.pagebloom.std.session.PagebloomStdSession;
     
 import com.sas.framework.expojo.Ex;
 
-// [Added by Code Injection Wizard: Log4J Logging Support]
+// [Added by Code Injection Wizard: SLF4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as
 // as it will be overwritten during subsequent updates. 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
     
 
 // -[KeepBeforeClass]-
@@ -71,10 +71,10 @@ class PagebloomStdApplication extends WexpojoApplication
 
 // -[Fields]-
 
-// [Added by Code Injection Wizard: Log4J Logging Support]
+// [Added by Code Injection Wizard: SLF4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as
 // as it will be overwritten during subsequent updates. 
-private static final Logger logger = LogManager.getLogger(PagebloomStdApplication.class);
+private static final Logger logger = LoggerFactory.getLogger(PagebloomStdApplication.class);
 
 
 // -[Methods]-

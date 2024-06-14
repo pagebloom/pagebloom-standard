@@ -57,11 +57,14 @@ private static AbstractExpojoAuthenticationConfig self;
 
 // -[Methods]-
 
+
+
+
 /**
  * Returns the auxiliary challenge if there is one or null if no auxiliary challenge
  * is available to be presented to the user.
  */
-public IAuxiliaryChallenge getAuxiliaryChallenge()
+public abstract IAuxiliaryChallenge getAuxiliaryChallenge();
 
 
 

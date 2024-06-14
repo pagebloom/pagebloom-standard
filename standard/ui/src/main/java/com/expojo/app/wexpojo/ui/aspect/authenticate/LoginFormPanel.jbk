@@ -24,6 +24,8 @@ import com.sas.app.wexpojo.biz.website.IWebsite;
 import com.sas.platform.pagebloom.std.session.PagebloomStdSession;
     
 import com.sas.framework.iam.authentication.IAuxiliaryChallenge;
+    
+import com.sas.framework.iam.authentication.expojo.ExpojoAuthenticationService;
 
 // [Added by Code Injection Wizard: Log4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as

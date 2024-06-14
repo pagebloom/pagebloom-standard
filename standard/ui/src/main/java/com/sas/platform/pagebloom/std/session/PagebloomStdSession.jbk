@@ -267,7 +267,8 @@ public PagebloomStdSession(Request request, Response response)
 
 	HttpServletRequest httpServletRequest = ((ServletWebRequest)request).getContainerRequest();
 	
-	// Set up a session object
+	// We must call getSession() to establish a session instance if none is already created even
+	// if we don't go on to use the session immediately
 	HttpSession session = httpServletRequest.getSession();
 }
 

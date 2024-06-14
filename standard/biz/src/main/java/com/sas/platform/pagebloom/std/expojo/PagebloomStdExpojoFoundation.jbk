@@ -45,8 +45,6 @@ import org.apache.logging.log4j.LogManager;
 // -[KeepBeforeClass]-
 import javax.servlet.ServletContext;
 
-import org.apache.commons.lang3.StringUtils;
-
 
 import com.sas.framework.iam.module.jdo.IdentityAccessModuleJdo;
 import com.sas.framework.system.Environment;
@@ -195,7 +193,7 @@ public void addWebsite(IWebsiteRepository websiteRepository, int id, String name
 		hostname.append(".");
 	}
 	
-	if (hostnamePrefix != null && hostnamePrefix.length() > 0))
+	if (hostnamePrefix != null && hostnamePrefix.length() > 0)
 	{
 		// hostnamePrefix will include a trailing .
 		hostname.append(hostnamePrefix);

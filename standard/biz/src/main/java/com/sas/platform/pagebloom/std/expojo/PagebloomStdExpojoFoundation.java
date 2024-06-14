@@ -35,11 +35,11 @@ import com.sas.framework.expojo.Ex;
     
 import com.sas.app.wexpojo.biz.website.Website;
 
-// [Added by Code Injection Wizard: Log4J Logging Support]
+// [Added by Code Injection Wizard: SLF4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as
 // as it will be overwritten during subsequent updates. 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 // -[KeepBeforeClass]-
@@ -71,10 +71,10 @@ class PagebloomStdExpojoFoundation extends ExpojoFoundation
 
 // -[Fields]-
 
-// [Added by Code Injection Wizard: Log4J Logging Support]
+// [Added by Code Injection Wizard: SLF4J Logging Support]
 // Do not edit code injected by the wizard directly in the source file as
 // as it will be overwritten during subsequent updates. 
-private static final Logger logger = LogManager.getLogger(PagebloomStdExpojoFoundation.class);
+private static final Logger logger = LoggerFactory.getLogger(PagebloomStdExpojoFoundation.class);
 
 
 // -[Methods]-
