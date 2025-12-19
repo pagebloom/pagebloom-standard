@@ -151,7 +151,7 @@ public IUser authenticateCredentials(String username, String password, boolean d
 	}
 
 	if ( foundUser != null )
-		foundUser.registerAuthentication();
+		foundUser.registerAuthentication(realm);
 
 	return foundUser;
 }
